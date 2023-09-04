@@ -872,6 +872,35 @@ button#see-more-content img {
     line-height: normal;
 }
 
+.checkbox-active1 {
+    margin-top: -21px;
+    float: right;
+    width: 24px;
+    height: 20px;
+    background-color: #009981;
+    bottom: 7px;
+    right: 1px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    position: inherit;
+    align-items: center;
+}
+
+
+.option-checkbox:checked ~ .checkbox-active1 {
+    opacity: 1 ;
+}
+
+.checkbox-active1 img {
+    border-radius: 10px;
+}
+.checkbox-active img {
+    border-radius: 10px;
+}
 .checkbox-active {
     width: 24px;
     height: 20px;
@@ -888,16 +917,17 @@ button#see-more-content img {
     align-items: center;
 }
 
+
 .checkbox-active i {
     font-size: 14px;
     color: white;
 }
 
-.option-checkbox:checked + .phone-details {
+.option-checkbox:checked ~ .phone-details {
     border: 2px solid #009981;
 }
 
-.option-checkbox:checked + .checkbox-active {
+.option-checkbox:checked ~ .checkbox-active {
     opacity: 1 !important;
 }
 
