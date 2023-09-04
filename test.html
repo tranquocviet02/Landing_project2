@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+body {
+    background-color: black;
+}
+.w3-badge {
+    width: 40px !important;
+    height: 5px !important;
+    /* border-radius: 12px; */
+    border-radius: 12px !important;
+    /* background-color: var(--green-green-1, #009981) !important; */
+}
+.w3-opacity-off1,.w3-hover-opacity-off1:hover {
+    opacity: 1
+}
+.w3-text-green, .w3-hover-text-green:hover {
+    color: #4CAF50;
+}
+.w3-green, .w3-hover-green:hover {
+    color: #fff;
+    background-color: #4CAF50;
+}
+.w3-white, .w3-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important;
+}
+</style>
+<body>
+
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container" onclick="myfunctionStop()" >
+  <img class="mySlides" src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.w3schools.com/w3css/img_snow_wide.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  <span class="w3-badge demo w3-border w3-green w3-hover-white w3-text-green" style="cursor:pointer" onclick="currentDiv(1)"></span>
+  <span class="w3-badge demo w3-border w3-green w3-hover-white w3-text-green" style="cursor:pointer" onclick="currentDiv(2)"></span>
+  <span class="w3-badge demo w3-border w3-green w3-hover-white w3-text-green" style="cursor:pointer" onclick="currentDiv(3)"></span>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo1 " src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo1 " src="https://www.w3schools.com/w3css/img_snow_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo1 " src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+<script>
+
+var slideIndex = 1;
+var stop = 0;
+function myfunctionStop() {
+  stop = 1;
+} 
+
+if(stop == 0) {
+    showDivs(slideIndex);
+}
+
+
+function plusDivs(n = 1) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var dots1 = document.getElementsByClassName("demo1");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+        dots1[i].className = dots1[i].className.replace(" w3-opacity-off1", "");
+      }
+
+  x[slideIndex-1].style.display = "block";  
+  dots1[slideIndex-1].className += " w3-opacity-off1";
+  dots[slideIndex-1].className += " w3-white";
+//chạy
+//   setTimeout(plusDivs, 3000);
+
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>

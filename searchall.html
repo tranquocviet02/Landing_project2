@@ -1,0 +1,129 @@
+<style>
+    body {
+        background: black;
+    }
+
+    a {
+        color: #485fc7;
+        cursor: pointer;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+    }
+
+    .header-overlay {
+        background: rgba(0, 0, 0, .53);
+        height: 100vh;
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        top: 64px;
+        transition: .3s;
+        visibility: hidden;
+        width: 100%;
+        z-index: 30;
+    }
+
+    .header-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .search-autocomplete {
+        max-width: 671px;
+        display: inline-flex;
+        padding: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        border-radius: 10px;
+        background: var(--white-white-1, #FFF);
+    }
+</style>
+<div id="search_autocomplete" class="box-search-result search-autocomplete block">
+    <div class="mb-1 category-box block">
+        <div class="mb-1-banner">
+            <p class="title-box">Có phải bạn muốn tìm</p>
+        </div>
+        <div class="list-cate">
+            <a href="https://cellphones.com.vn/mobile/samsung.html" class="is-block">
+                <div class="wrapper">Máy tính bảng Samsung
+                </div>
+            </a>
+            <a href="https://cellphones.com.vn/hang-cu/samsung.html" class="is-block">
+                <div class="wrapper">Điện thoại Samsung
+                </div>
+            </a>
+            <a href="https://cellphones.com.vn/tablet/samsung.html" class="is-block">
+                <div class="wrapper">Đồng hồ thông minh Samsung
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="mt-2 product-box">
+        <div class="mb-2-banner">
+            <p class="title-box">Sản phẩm gợi ý</p>
+        </div>
+        <a href="https://cellphones.com.vn/samsung-galaxy-s23-ultra.html"
+            class="header-search-item is-flex is-align-items-center"><img
+                src="https://cdn2.cellphones.com.vn/x,webp,q100/media/catalog/product/g/a/galaxys23ultra_front_green_221122_2.jpg"
+                alt="Samsung Galaxy S23 Ultra 256GB" loading="lazy" class="mr-1">
+            <div class="header-search-item-info">
+                <p class="header-search-name">Samsung Galaxy S23 Ultra 256GB</p>
+                <div class="is-flex is-align-items-flex-end">
+                    <p class="header-search-special mr-1">
+                        25.990.000</p>
+                    <p class="header-search-price">31.990.000</p>
+                </div>
+            </div>
+        </a><a href="https://cellphones.com.vn/samsung-galaxy-s22-ultra-12gb-256gb.html"
+            class="header-search-item is-flex is-align-items-center"><img
+                src="https://cdn2.cellphones.com.vn/x,webp,q100/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_phantomblack_211119_2.jpg"
+                alt="Samsung Galaxy S22 Ultra (12GB - 256GB) - Chỉ có tại CellphoneS" loading="lazy" class="mr-1">
+            <div class="header-search-item-info">
+                <p class="header-search-name">Samsung Galaxy S22 Ultra (12GB - 256GB) - Chỉ có tại
+                    CellphoneS</p>
+                <div class="is-flex is-align-items-flex-end">
+                    <p class="header-search-special mr-1">
+                        18.990.000</p>
+                    <p class="header-search-price">33.990.000</p>
+                </div>
+            </div>
+        </a><a href="https://cellphones.com.vn/samsung-galaxy-z-flip-5.html"
+            class="header-search-item is-flex is-align-items-center"><img
+                src="https://cdn2.cellphones.com.vn/x,webp,q100/media/catalog/product/d/4/d4a672c5-4709-4056-9f7f-72d6d70c2c1d_1.jpg"
+                alt="Samsung Galaxy Z Flip5 512GB" loading="lazy" class="mr-1">
+            <div class="header-search-item-info">
+                <p class="header-search-name">Samsung Galaxy Z Flip5 512GB</p>
+                <div class="is-flex is-align-items-flex-end">
+                    <p class="header-search-special mr-1">
+                        25.990.000</p>
+                    <p class="header-search-price">29.990.000</p>
+                </div>
+            </div>
+        </a><a href="https://cellphones.com.vn/samsung-galaxy-s22-ultra.html"
+            class="header-search-item is-flex is-align-items-center"><img
+                src="https://cdn2.cellphones.com.vn/x,webp,q100/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_burgundy_211119.jpg"
+                alt="Samsung Galaxy S22 Ultra (8GB - 128GB)" loading="lazy" class="mr-1">
+            <div class="header-search-item-info">
+                <p class="header-search-name">Samsung Galaxy S22 Ultra (8GB - 128GB)</p>
+                <div class="is-flex is-align-items-flex-end">
+                    <p class="header-search-special mr-1">
+                        17.000.000</p>
+                    <p class="header-search-price">30.990.000</p>
+                </div>
+            </div>
+        </a><a href="https://cellphones.com.vn/samsung-galaxy-z-flip-5-256gb.html"
+            class="header-search-item is-flex is-align-items-center"><img
+                src="https://cdn2.cellphones.com.vn/x,webp,q100/media/catalog/product/d/4/d4a672c5-4709-4056-9f7f-72d6d70c2c1d_1_1.jpg"
+                alt="Samsung Galaxy Z Flip5 256GB" loading="lazy" class="mr-1">
+            <div class="header-search-item-info">
+                <p class="header-search-name">Samsung Galaxy Z Flip5 256GB</p>
+                <div class="is-flex is-align-items-flex-end">
+                    <p class="header-search-special mr-1">
+                        21.990.000</p>
+                    <p class="header-search-price">25.990.000</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
