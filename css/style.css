@@ -338,8 +338,8 @@ gap: 16px;
 
 .info-left-address {
     display: flex;
-    width: 696px;
-    height: 437px;
+    max-width: 696px;
+    height: auto;
     padding-bottom: 0px;
     flex-direction: column;
     align-items: center;
@@ -350,7 +350,7 @@ gap: 16px;
 
 .info-left-address-title {
     display: flex;
-    width: 696px;
+    width: 100%;
     padding: 12px 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -464,7 +464,8 @@ border: 1px solid var(--black-black-3, #C9C9C9);
     overflow-y: scroll;
     border-radius: 5px;
 background: var(--white-white-2, #F4F4F4);
-height: 248px;
+height: 263px;
+margin-bottom: 16px;
 
 }
 
@@ -892,12 +893,12 @@ button#see-more-content img {
     color: white;
 }
 
-.option-checkbox:checked+.phone-details {
+.option-checkbox:checked + .phone-details {
     border: 2px solid #009981;
 }
 
-.option-checkbox:checked+.checkbox-active {
-    opacity: 1;
+.option-checkbox:checked + .checkbox-active {
+    opacity: 1 !important;
 }
 
 .info-right-color-title {
@@ -2056,6 +2057,7 @@ gap: 12px;
 }
 
 #see-more-speci {
+    cursor: pointer;
     margin: 0 auto;
     display: flex;
     padding: 10px 74px;
@@ -2083,7 +2085,7 @@ gap: 12px;
     fill: var(--black-black-2, #4B4B4B);
 }
 
-
+#machine,
 #accessory,
 #compare,
 #new,
@@ -2107,6 +2109,27 @@ gap: 12px;
 }
 
 .accessory-title-banner {
+    padding: 7px 10px;
+    background-color: #00483D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 6px;
+}
+
+.machine-title {
+    max-width: 382px;
+    height: 41px;
+    background-color: var(--background-color-green);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 24px;
+    border-radius: 6px;
+}
+
+.machine-title-banner {
     padding: 7px 10px;
     background-color: #00483D;
     display: flex;
@@ -2179,6 +2202,7 @@ gap: 12px;
     border-radius: 6px;
 }
 
+.machine-title-banner::before,
 .accessory-title-banner::before,
 .compare-title-banner::before,
 .new-title-banner::before,
@@ -2196,6 +2220,7 @@ gap: 12px;
     transform: skew(-20deg);
 }
 
+.machine-title-banner h1,
 .accessory-title-banner h1,
 .compare-title-banner h1,
 .new-title-banner h1,
@@ -2205,6 +2230,7 @@ gap: 12px;
     color: white;
 }
 
+.machine-all-product,
 .accessory-all-product,
 .compare-all-product,
 .new-all-product {
@@ -2244,6 +2270,7 @@ gap: 12px;
     flex-shrink: 0;
 }
 
+.machine-product-detail1,
 .accessory-product-detail1,
 .compare-product-detail1,
 .new-product-detail1 {
@@ -2273,12 +2300,16 @@ gap: 12px;
 .accessory-product-detail {
     max-height: 381px;
 }
+.machine-product-detail {
+    max-height: 381px;
+}
 .compare-product-detail {
     max-height: 406px;
 }
 .new-product-detail  {
     max-height: 379px;
 }
+.machine-product-detail,
 .accessory-product-detail,
 .compare-product-detail,
 .new-product-detail {
@@ -2303,7 +2334,7 @@ gap: 12px;
     width: 100%;
     height: 340px;
 }
-
+.machine-product-detail-img,
 .accessory-product-detail-img,
 .compare-product-detail-img,
 .new-product-detail-img {
@@ -2321,7 +2352,7 @@ gap: 12px;
     justify-content: center;
     align-items: center;
 }
-
+.machine-product-detail-img img,
 .accessory-product-detail-img img,
 .compare-product-detail-img img,
 .new-product-detail-img img {
@@ -2335,7 +2366,7 @@ gap: 12px;
     height: 234px;
     object-fit: cover;
 }
-
+.machine-product-detail-name,
 .accessory-product-detail-name,
 .compare-product-detail-name,
 .new-product-detail-name {
@@ -2355,7 +2386,7 @@ gap: 12px;
     align-items: center;
     text-align: left;
 }
-
+.machine-product-detail-name h3,
 .accessory-product-detail-name h3,
 .compare-product-detail-name h3,
 .new-product-detail-name h3 {
@@ -2377,6 +2408,7 @@ gap: 12px;
     color: #191919;
 }
 
+.machine-product-detail-price,
 .accessory-product-detail-price,
 .compare-product-detail-price,
 .new-product-detail-price {
@@ -2387,7 +2419,7 @@ gap: 12px;
     align-items: center;
     gap: 10px;
 }
-
+.machine-product-detail-price h2,
 .accessory-product-detail-price h2,
 .compare-product-detail-price h2,
 .new-product-detail-price h2 {
@@ -2401,7 +2433,7 @@ gap: 12px;
     font-weight: 700;
     line-height: normal;
 }
-
+.machine-product-detail-price p,
 .accessory-product-detail-price p,
 .compare-product-detail-price p {
     color: var(--black-black-2, #4B4B4B);
@@ -2419,7 +2451,7 @@ gap: 12px;
     font-weight: 400;
     color: #4B4B4B;
 }
-
+.machine-product-detail-save,
 .accessory-product-detail-save,
 .compare-product-detail-save {
     width: 100%;
@@ -2430,14 +2462,14 @@ gap: 12px;
     justify-content: center;
     align-items: center;
 }
-
+.machine-product-detail-save h4,
 .accessory-product-detail-save h4,
 .compare-product-detail-save h4 {
     font-size: 13px;
     font-weight: 600;
     color: #009981;
 }
-
+.machine-product-detail-save h4 span,
 .accessory-product-detail-save h4 span,
 .compare-product-detail-save h4 span {
     font-size: 13px;
@@ -2466,7 +2498,7 @@ gap: 12px;
     background-color: #FD475A;
     border-radius: 5px;
 }
-
+.machine-product-detail-add h5,
 .accessory-product-detail-add h5,
 .compare-product-detail-add h5 {
     font-size: 15px;
@@ -2479,7 +2511,7 @@ gap: 12px;
     font-weight: 700;
     color: white;
 }
-
+.machine-product-button-slider,
 .accessory-product-button-slider,
 .compare-product-button-slider,
 .new-product-button-slider,
@@ -2493,7 +2525,7 @@ gap: 12px;
     left: 0;
     transform: translate(0, -50%);
 }
-
+.machine-product-button-slider button,
 .accessory-product-button-slider button,
 .compare-product-button-slider button,
 .new-product-button-slider button,
@@ -2506,7 +2538,7 @@ gap: 12px;
     cursor: pointer;
     opacity: 0.5;
 }
-
+.machine-product-button-slider button i,
 .accessory-product-button-slider button i,
 .compare-product-button-slider button i,
 .new-product-button-slider button i,
@@ -2550,6 +2582,7 @@ gap: 12px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.machine-product-paginate,
 .accessory-product-paginate,
 .compare-product-paginate,
 .new-product-paginate,

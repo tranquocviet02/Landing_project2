@@ -235,3 +235,48 @@ if(stop_compare == 1) {
 
 }
 
+// máy cũ giá tốt gần bạn
+
+
+var slideIndex_machine = 1;
+//nếu chưa dạm vào function thì tự chạy
+
+var stop_machine = 1;
+function myfunctionStop_machine() {
+  stop_machine = 2;
+} 
+
+if(stop_machine == 1) {
+  showDivs_machine(slideIndex_machine);
+}
+
+
+function plusDivs_machine(n = 1) {
+  showDivs_machine(slideIndex_machine += n);
+}
+
+function currentDiv_machine(n) {
+  showDivs_machine(slideIndex_machine = n);
+}
+
+function showDivs_machine(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides_machine");
+  var dots_machine = document.getElementsByClassName("demo_machine");
+  if (n > x.length) {slideIndex_machine = 1}
+  if (n < 1) {slideIndex_machine = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots_machine.length; i++) {
+    dots_machine[i].className = dots_machine[i].className.replaceAll(" w3-badge", "");
+      }
+
+  x[slideIndex_machine-1].style.display = "flex";  
+  dots_machine[slideIndex_machine-1].className += " w3-badge";
+// //chạy
+if(stop_compare == 1) {
+    // setTimeout(plusDivs_machine, 3000);
+}
+
+}
