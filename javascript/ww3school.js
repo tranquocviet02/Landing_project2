@@ -195,6 +195,7 @@ var slideIndex_detail = 1;
 var stop_detail = 1;
 function myfunctionStop_detail() {
   stop_detail = 2;
+  
 } 
 
 if(stop_detail == 1) {
@@ -279,4 +280,106 @@ if(stop_compare == 1) {
     // setTimeout(plusDivs_machine, 3000);
 }
 
+}
+
+//sản phẩm so sánh
+
+var slideIndex_compare_pp = 1;
+//nếu chưa dạm vào function thì tự chạy
+
+var stop_compare_pp = 1;
+function myfunctionStop_compare_pp() {
+  stop_compare_pp = 2;
+} 
+
+if(stop_compare_pp == 1) {
+  showDivs_compare_pp(slideIndex_compare_pp);
+}
+
+
+function plusDivs_compare_pp(n = 1) {
+  showDivs_compare_pp(slideIndex_compare_pp += n);
+}
+
+function currentDiv_compare_pp(n) {
+  showDivs_compare_pp(slideIndex_compare_pp = n);
+}
+
+function showDivs_compare_pp(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides_compare_pp");
+  var dots_compare_pp = document.getElementsByClassName("demo_compare_pp");
+  if (n > x.length) {slideIndex_compare_pp = 1}
+  if (n < 1) {slideIndex_compare_pp = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots_compare_pp.length; i++) {
+        dots_compare_pp[i].className = dots_compare_pp[i].className.replaceAll(" w3-badge", "");
+      }
+
+  x[slideIndex_compare_pp-1].style.display = "flex";  
+  dots_compare_pp[slideIndex_compare_pp-1].className += " w3-badge";
+// //chạy
+if(stop_compare_pp == 1) {
+    setTimeout(plusDivs_compare_pp, 15000);
+}
+
+}
+
+
+function onclickSearch(){
+  var addsearch = document.getElementById("compare-search");
+  addsearch.classList.add("no-scroll");
+  addsearch.classList.add("k-overlay");
+
+}
+
+// Get the button that opens the modal
+var clearall = document.getElementsByClassName("clearall");
+clearall.onclick = function() {
+  modal.style.display = "none";
+}
+function compare_add() {
+  document.getElementById("collapse").style.display = "block";
+  document.getElementById("popup-ss").style.display = "none";
+}
+
+function clearCompare(){
+  document.getElementById("collapse").style.display = "none";
+  document.getElementById("popup-ss").style.display = "block";
+}
+
+function showCompare(){
+  document.getElementById("collapse").style.display = "block";
+  document.getElementById("popup-ss").style.display = "none";
+}
+
+function removeCompare1(){
+  document.getElementById("drum03090000").style.display = "flex";
+  document.getElementById("have03092000").style.display = "none";
+}
+function removeCompare2(){
+  document.getElementById("drum030900001").style.display = "flex";
+  document.getElementById("have030920001").style.display = "none";
+}
+function removeCompare3(){
+  document.getElementById("drum030900002").style.display = "flex";
+  document.getElementById("have030920002").style.display = "none";
+}
+function ClosePopup(){
+  document.getElementById("Mymodaladd").style.display = "none";
+}
+
+function OpenPopup(){
+  document.getElementById("Mymodaladd").style.display = "flex";
+}
+function RemoveAllIdCompare(){
+  document.getElementById("have03092000").style.display = "none";
+  document.getElementById("drum03090000").style.display = "flex";
+  document.getElementById("have030920001").style.display = "none";
+  document.getElementById("drum030900001").style.display = "flex";
+  document.getElementById("have030920002").style.display = "none";
+  document.getElementById("drum030900002").style.display = "flex";
+  document.getElementById("popup-ss").style.display = "none";
 }
