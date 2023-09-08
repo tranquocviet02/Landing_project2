@@ -136,26 +136,87 @@ seeMoreOfferButton.addEventListener('click', function() {
 
   if (computedStyles.maxHeight === '270px') {
     offerContent.style.maxHeight = '600px';
-    seeMoreOfferButton.style.borderTopLeftRadius = '0';
-    seeMoreOfferButton.style.borderTopRightRadius = '0';
-    seeMoreOfferButton.style.borderBottomLeftRadius = '10px';
-    seeMoreOfferButton.style.borderBottomRightRadius = '10px';
+    // seeMoreOfferButton.style.borderTopLeftRadius = '0';
+    // seeMoreOfferButton.style.borderTopRightRadius = '0';
+    // seeMoreOfferButton.style.borderBottomLeftRadius = '10px';
+    // seeMoreOfferButton.style.borderBottomRightRadius = '10px';
     seeMoreOfferButton.style.textTransform = 'uppercase';
-    seeMoreOfferButton.innerHTML = 'Thu gọn bài viết <i class="fa-solid fa-caret-up"></i>';
+    seeMoreOfferButton.innerHTML = '<h3>Thu gọn bài viết </h3><i class="fa-solid fa-caret-up"></i>';
     offerContent.classList.add('open');
 
   } else {
     offerContent.style.maxHeight = '270px';
-    seeMoreOfferButton.style.borderTopLeftRadius = '10px';
-    seeMoreOfferButton.style.borderTopRightRadius = '10px';
-    seeMoreOfferButton.style.borderBottomLeftRadius = '0';
-    seeMoreOfferButton.style.borderBottomRightRadius = '0';
+    // seeMoreOfferButton.style.borderTopLeftRadius = '10px';
+    // seeMoreOfferButton.style.borderTopRightRadius = '10px';
+    // seeMoreOfferButton.style.borderBottomLeftRadius = '0';
+    // seeMoreOfferButton.style.borderBottomRightRadius = '0';
     seeMoreOfferButton.style.textTransform = 'uppercase';
-    seeMoreOfferButton.innerHTML = 'Xem thêm bài viết <i class="fa-solid fa-caret-down"></i>';
+    seeMoreOfferButton.innerHTML = '<h3>Xem thêm bài viết </h3> <i class="fa-solid fa-caret-down"></i>';
     offerContent.classList.remove('open');
 
   }
 });
+
+
+// const offerMoreContentone = document.querySelector('.info-right-offer-content-one');
+// const seeMoreOfferMoreButtonone = document.getElementById('see-more-offer-one');
+
+
+// seeMoreOfferMoreButtonone.addEventListener('click', function() {
+
+//   const computedStyles = window.getComputedStyle(offerMoreContentone);
+
+//   if (computedStyles.maxHeight === '300px') {
+//     offerMoreContentone.style.maxHeight = '800px';
+
+//     seeMoreOfferMoreButtonone.style.textTransform = 'uppercase';
+//     seeMoreOfferMoreButtonone.innerHTML = '<h3>Thu gọn bài viết </h3> <i class="fa-solid fa-caret-up"></i>';
+//     offerMoreContentone.classList.add('open');
+
+//   } else {
+//     offerMoreContentone.style.maxHeight = '300px';
+//     // seeMoreOfferMoreButton.style.borderTopLeftRadius = '10px';
+//     // seeMoreOfferMoreButton.style.borderTopRightRadius = '10px';
+//     // seeMoreOfferMoreButton.style.borderBottomLeftRadius = '0';
+//     // seeMoreOfferMoreButton.style.borderBottomRightRadius = '0';
+//     seeMoreOfferMoreButtonone.style.textTransform = 'uppercase';
+//     seeMoreOfferMoreButtonone.innerHTML = '<h3>Xem thêm bài viết </h3> <i class="fa-solid fa-caret-down"></i>';
+//     offerMoreContentone.classList.remove('open');
+
+//   }
+// });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const offerMoreContentone = document.querySelector('.info-right-offer-content-one');
+  const contentContainer = document.getElementById("content-hident");
+  const seeMoreOfferMoreButtonone = document.getElementById('see-more-offer-one');
+
+  let isExpanded = false; // Biến để theo dõi trạng thái mở rộng/đóng lại
+
+  // Xử lý sự kiện khi người dùng nhấp vào nút "Xem thêm/Thu gọn"
+  seeMoreOfferMoreButtonone.addEventListener("click", function () {
+      if (isExpanded) {
+          // Nếu đang mở rộng, ẩn nội dung
+          contentContainer.style.display = "none";
+          seeMoreOfferMoreButtonone.style.textTransform = 'uppercase';
+          seeMoreOfferMoreButtonone.innerHTML = '<h3>Xem thêm bài viết </h3> <i class="fa-solid fa-caret-down"></i>';
+          offerMoreContentone.classList.add('open');
+      } else {
+          // Nếu đang đóng lại, hiển thị nội dung
+          contentContainer.style.display = "inline-flex";
+          seeMoreOfferMoreButtonone.style.textTransform = 'uppercase';
+          seeMoreOfferMoreButtonone.innerHTML = '<h3>Thu gọn bài viết </h3> <i class="fa-solid fa-caret-up"></i>';
+          offerMoreContentone.classList.add('open');
+      }
+
+      // Đảo ngược trạng thái mở rộng/đóng lại
+      isExpanded = !isExpanded;
+  });
+});
+
+
+
 
 
 const offerMoreContent = document.querySelector('.info-right-offer-more-content');
@@ -168,22 +229,22 @@ seeMoreOfferMoreButton.addEventListener('click', function() {
 
   if (computedStyles.maxHeight === '290px') {
     offerMoreContent.style.maxHeight = '800px';
-    seeMoreOfferMoreButton.style.borderTopLeftRadius = '0';
-    seeMoreOfferMoreButton.style.borderTopRightRadius = '0';
-    seeMoreOfferMoreButton.style.borderBottomLeftRadius = '10px';
-    seeMoreOfferMoreButton.style.borderBottomRightRadius = '10px';
+    // seeMoreOfferMoreButton.style.borderTopLeftRadius = '0';
+    // seeMoreOfferMoreButton.style.borderTopRightRadius = '0';
+    // seeMoreOfferMoreButton.style.borderBottomLeftRadius = '10px';
+    // seeMoreOfferMoreButton.style.borderBottomRightRadius = '10px';
     seeMoreOfferMoreButton.style.textTransform = 'uppercase';
-    seeMoreOfferMoreButton.innerHTML = 'Thu gọn bài viết <i class="fa-solid fa-caret-up"></i>';
+    seeMoreOfferMoreButton.innerHTML = '<h3>Thu gọn bài viết </h3> <i class="fa-solid fa-caret-up"></i>';
     offerMoreContent.classList.add('open');
 
   } else {
     offerMoreContent.style.maxHeight = '290px';
-    seeMoreOfferMoreButton.style.borderTopLeftRadius = '10px';
-    seeMoreOfferMoreButton.style.borderTopRightRadius = '10px';
-    seeMoreOfferMoreButton.style.borderBottomLeftRadius = '0';
-    seeMoreOfferMoreButton.style.borderBottomRightRadius = '0';
+    // seeMoreOfferMoreButton.style.borderTopLeftRadius = '10px';
+    // seeMoreOfferMoreButton.style.borderTopRightRadius = '10px';
+    // seeMoreOfferMoreButton.style.borderBottomLeftRadius = '0';
+    // seeMoreOfferMoreButton.style.borderBottomRightRadius = '0';
     seeMoreOfferMoreButton.style.textTransform = 'uppercase';
-    seeMoreOfferMoreButton.innerHTML = 'Xem thêm bài viết <i class="fa-solid fa-caret-down"></i>';
+    seeMoreOfferMoreButton.innerHTML = '<h3>Xem thêm bài viết </h3> <i class="fa-solid fa-caret-down"></i>';
     offerMoreContent.classList.remove('open');
 
   }

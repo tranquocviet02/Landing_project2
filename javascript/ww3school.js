@@ -41,9 +41,9 @@ function showDivs(n) {
 x[slideIndex-1].style.display = "flex";  
 dots[slideIndex-1].className += " w3-badge";
 
-if(stop_new == 1) {
-  setTimeout(plusDivs, 15000);
-}
+// if(stop_new == 1) {
+//   setTimeout(plusDivs, 15000);
+// }
 }
 
 //sản phẩm so sánh
@@ -85,9 +85,9 @@ function showDivs_compare(n) {
   x[slideIndex_compare-1].style.display = "flex";  
   dots_compare[slideIndex_compare-1].className += " w3-badge";
 // //chạy
-if(stop_compare == 1) {
-    setTimeout(plusDivs_compare, 15000);
-}
+// if(stop_compare == 1) {
+//     setTimeout(plusDivs_compare, 15000);
+// }
 
 }
 
@@ -132,9 +132,9 @@ function showDivs_accessory(n) {
   x[slideIndex_accessory-1].style.display = "flex";  
   dots_accessory[slideIndex_accessory-1].className += " w3-badge";
 // //chạy
-if(stop_compare == 1) {
-    // setTimeout(plusDivs_accessory, 3000);
-}
+// if(stop_compare == 1) {
+//     // setTimeout(plusDivs_accessory, 3000);
+// }
 
 }
 
@@ -179,9 +179,9 @@ function showDivs_news(n) {
   x[slideIndex_news-1].style.display = "grid";  
   dots_news[slideIndex_news-1].className += " w3-badge";
 // //chạy
-if(stop_compare == 1) {
-    setTimeout(plusDivs_news, 15000);
-}
+// if(stop_compare == 1) {
+//     setTimeout(plusDivs_news, 15000);
+// }
 
 }
 
@@ -195,7 +195,6 @@ var slideIndex_detail = 1;
 var stop_detail = 1;
 function myfunctionStop_detail() {
   stop_detail = 2;
-  
 } 
 
 if(stop_detail == 1) {
@@ -230,9 +229,9 @@ function showDivs_detail(n) {
   dots_detail[slideIndex_detail-1].className += " w3-badge";
   dots_img[slideIndex_detail-1].className += " w3_opacity";
 // //chạy
-if(stop_compare == 1) {
-     setTimeout(plusDivs_detail, 15000);
-}
+// if(stop_compare == 1) {
+//      setTimeout(plusDivs_detail, 15000);
+// }
 
 }
 
@@ -276,9 +275,9 @@ function showDivs_machine(n) {
   x[slideIndex_machine-1].style.display = "flex";  
   dots_machine[slideIndex_machine-1].className += " w3-badge";
 // //chạy
-if(stop_compare == 1) {
-    // setTimeout(plusDivs_machine, 3000);
-}
+// if(stop_compare == 1) {
+//     // setTimeout(plusDivs_machine, 3000);
+// }
 
 }
 
@@ -322,7 +321,7 @@ function showDivs_compare_pp(n) {
   dots_compare_pp[slideIndex_compare_pp-1].className += " w3-badge";
 // //chạy
 if(stop_compare_pp == 1) {
-    setTimeout(plusDivs_compare_pp, 15000);
+    // setTimeout(plusDivs_compare_pp, 15000);
 }
 
 }
@@ -383,3 +382,34 @@ function RemoveAllIdCompare(){
   document.getElementById("drum030900002").style.display = "flex";
   document.getElementById("popup-ss").style.display = "none";
 }
+
+
+
+// xử lí sự kiện xem thêm cmt
+
+var data = document.getElementsByClassName("ask-content-comment");
+const loadMoreButton = document.getElementById("btn-xemthem");
+let currentIndex = 0;
+const itemsPerPage = 2;
+
+// Hàm hiển thị 10 bản ghi tiếp theo
+function displayNextItems() {
+
+    const endIndex = currentIndex + itemsPerPage;
+    for (let i = currentIndex; i < endIndex && i < data.length; i++) {
+        data.itemsPerPage < data[i]
+        data[i].style.display = "block";
+    }
+    currentIndex = endIndex;
+
+    // Ẩn nút "Xem thêm" nếu đã hiển thị hết dữ liệu
+    if (currentIndex >= data.length) {
+        loadMoreButton.style.display = "none";
+    }
+}
+
+// Gọi hàm để hiển thị dữ liệu ban đầu
+displayNextItems();
+
+// Xử lý sự kiện khi người dùng ấn vào nút "Xem thêm"
+loadMoreButton.addEventListener("click", displayNextItems);

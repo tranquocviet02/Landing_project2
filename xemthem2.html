@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xem thêm ví dụ</title>
+</head>
+<body>
+  <div id="content">
+    <!-- Nội dung ban đầu ở đây -->
+    <p class="xemthem">Điều này là nội dung ban đầu.</p>
+    <p class="xemthem">Điều này là nội dung ban đầu 2.</p>
+    <p class="xemthem">Điều này là nội dung ban đầu.3</p>
+    <p class="xemthem">Điều này là nội dung ban đầu.4</p>
+    <p class="xemthem">Điều này là nội dung ban đầu.5</p>
+  </div>
+  <button id="load-more">Xem thêm</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+ var x = document.getElementsByClassName("xemthem");
+  const contentContainer = document.getElementById("content");
+  const loadMoreButton = document.getElementById("load-more");
+
+//   // Dữ liệu giả định (mảng các đoạn văn)
+//   const data = [
+//     "Đây là đoạn văn thứ 2.",
+//     "Một đoạn văn khác.",
+//     "Và một đoạn văn cuối cùng."
+//   ];
+
+  let currentIndex = 2; // Index của đoạn văn hiện tại
+
+  // Hàm để thêm nội dung mới vào container
+  function loadMoreContent() {
+    debugger;
+    if (currentIndex < x.length) {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = x[currentIndex];
+      contentContainer.appendChild(paragraph);
+      currentIndex++;
+    } else {
+      loadMoreButton.disabled = true; // Tắt nút khi hết dữ liệu
+    }
+  }
+
+  // Xử lý sự kiện khi người dùng nhấp vào nút "Xem thêm"
+  loadMoreButton.addEventListener("click", loadMoreContent);
+});
+
+  </script>
+</body>
+</html>
