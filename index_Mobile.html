@@ -1589,12 +1589,22 @@
                         <h3>So sánh sản phẩm</h3>
                     </div>
                 </div>
-                <div class="compare-search">
+                <!-- <div class="compare-search">
                     <div class="compare-search-detail">
                         <input type="text" name="" id="" placeholder="Chọn sản phẩm muốn so sánh">
                         <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                </div>
+                </div> -->
+<div class="submit_search">
+    <div class="compare-pp-search" >
+        <form method="get"  action="/tim-kiem" onsubmit="">
+            <div class="compare-pp-search-detail">
+                <input type="text" placeholder="Chọn sản phẩm muốn so sánh">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
                 <div class="compare-all-product" id="product-container-compare">
                     <div class="mySlides_compare compare-product-detail1">
                         <div class="compare-product-detail">
@@ -3251,7 +3261,7 @@
                     <div class="ask-content-form">
                         <form action="">
                             <div class="ask-content-input">
-                                <input type="text" placeholder="Tên của bạn">
+                                <input type="text" placeholder="Tên của bạn" onclick="backgroound()">
                                 <textarea name="" id="" cols="30" rows="10"
                                     placeholder="Nhập câu hỏi của bạn tại đây. Chúng tôi sẽ trả lời bạn trong thời gian sớm nhất"></textarea>
                             </div>
@@ -3808,7 +3818,7 @@
                         <img src="./images/Close button.png" alt="" onclick="ClosePopup()">
                     </div>
                     <div class="compare-pp-search" id="Kwdsearch">
-                        <form method="get" onclick="onclickSearch()" action="/tim-kiem" onsubmit="">
+                        <form method="get" onclick="onclickSearch()" id="onclickSearch" action="/tim-kiem" onsubmit="">
                             <div class="compare-pp-search-detail">
                                 <input type="text" placeholder="Chọn sản phẩm muốn so sánh">
                                 <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -3818,10 +3828,7 @@
                     <div class="compare-popup">
                         <div class="compare-pp-title">
                             <div class="banner-image">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="92" height="41" viewBox="0 0 92 41"
-                                    fill="none">
-                                    <path d="M0.5 0H91.5L75.8656 41H0.5V0Z" fill="#00957C" />
-                                </svg>
+                                <img src="./images/Rectangle 49.png" alt="">
                                 <h3>SO SÁNH SẢN PHẨM</h3>
                             </div>
                         </div>
@@ -3835,32 +3842,6 @@
                                     <div class="compare-pp-product-detail-name">
                                         <h3>Samsung Galaxy S22 Ultra
                                             12/128GB 1</h3>
-                                    </div>
-                                    <div class="compare-pp-product-detail-price">
-                                        <h2>24.990.000 ₫</h2>
-                                        <p>30.990.000 ₫</p>
-                                    </div>
-                                    <div class="compare-pp-product-detail-save">
-                                        <h4>Bảo hành: <span>10 Tháng</span></h4>
-                                    </div>
-                                    <a class="compare-pp-product-detail-add" onclick="compare_add()">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25"
-                                            viewBox="0 0 26 25" fill="none">
-                                            <path
-                                                d="M12.2965 17.7085H13.859V13.3856H18.208V11.8231H13.859V7.29183H12.2965V11.8231H7.79134V13.3856H12.2965V17.7085ZM13.0066 22.9168C11.5702 22.9168 10.2204 22.6434 8.95712 22.0965C7.69382 21.5496 6.58908 20.8031 5.6429 19.8569C4.69672 18.9108 3.9502 17.8054 3.40332 16.5408C2.85645 15.2762 2.58301 13.925 2.58301 12.4871C2.58301 11.0493 2.85645 9.69811 3.40332 8.43352C3.9502 7.16892 4.69672 6.06787 5.6429 5.13037C6.58908 4.19287 7.69448 3.45068 8.95908 2.90381C10.2237 2.35693 11.5749 2.0835 13.0127 2.0835C14.4505 2.0835 15.8017 2.35693 17.0663 2.90381C18.3309 3.45068 19.432 4.19287 20.3695 5.13037C21.307 6.06787 22.0492 7.1703 22.596 8.43766C23.1429 9.70502 23.4163 11.0569 23.4163 12.4932C23.4163 13.9296 23.1429 15.2794 22.596 16.5427C22.0492 17.806 21.307 18.9092 20.3695 19.8521C19.432 20.7951 18.3295 21.5417 17.0622 22.0917C15.7948 22.6418 14.443 22.9168 13.0066 22.9168ZM13.0127 21.3543C15.4693 21.3543 17.557 20.4906 19.2757 18.7632C20.9945 17.0358 21.8538 14.9437 21.8538 12.4871C21.8538 10.0305 20.9961 7.94287 19.2806 6.22412C17.5651 4.50537 15.4715 3.646 12.9997 3.646C10.5518 3.646 8.46408 4.50374 6.73665 6.21923C5.00922 7.93473 4.14551 10.0284 4.14551 12.5002C4.14551 14.9481 5.00922 17.0358 6.73665 18.7632C8.46408 20.4906 10.5561 21.3543 13.0127 21.3543Z"
-                                                fill="#FD475A" />
-                                        </svg>
-                                        <h5>So sánh</h5>
-                                    </a>
-                                </div>
-                                <div class="compare-pp-product-detail">
-                                    <div class="compare-pp-product-detail-img">
-                                        <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png"
-                                            alt="">
-                                    </div>
-                                    <div class="compare-pp-product-detail-name">
-                                        <h3>Samsung Galaxy S22 Ultra
-                                            12/128GB</h3>
                                     </div>
                                     <div class="compare-pp-product-detail-price">
                                         <h2>24.990.000 ₫</h2>
@@ -3959,32 +3940,6 @@
                                         <h5>So sánh</h5>
                                     </a>
                                 </div>
-                                <div class="compare-pp-product-detail">
-                                    <div class="compare-pp-product-detail-img">
-                                        <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png"
-                                            alt="">
-                                    </div>
-                                    <div class="compare-pp-product-detail-name">
-                                        <h3>Samsung Galaxy S22 Ultra
-                                            12/128GB</h3>
-                                    </div>
-                                    <div class="compare-pp-product-detail-price">
-                                        <h2>24.990.000 ₫</h2>
-                                        <p>30.990.000 ₫</p>
-                                    </div>
-                                    <div class="compare-pp-product-detail-save">
-                                        <h4>Bảo hành: <span>10 Tháng</span></h4>
-                                    </div>
-                                    <a class="compare-pp-product-detail-add" onclick="compare_add()">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25"
-                                            viewBox="0 0 26 25" fill="none">
-                                            <path
-                                                d="M12.2965 17.7085H13.859V13.3856H18.208V11.8231H13.859V7.29183H12.2965V11.8231H7.79134V13.3856H12.2965V17.7085ZM13.0066 22.9168C11.5702 22.9168 10.2204 22.6434 8.95712 22.0965C7.69382 21.5496 6.58908 20.8031 5.6429 19.8569C4.69672 18.9108 3.9502 17.8054 3.40332 16.5408C2.85645 15.2762 2.58301 13.925 2.58301 12.4871C2.58301 11.0493 2.85645 9.69811 3.40332 8.43352C3.9502 7.16892 4.69672 6.06787 5.6429 5.13037C6.58908 4.19287 7.69448 3.45068 8.95908 2.90381C10.2237 2.35693 11.5749 2.0835 13.0127 2.0835C14.4505 2.0835 15.8017 2.35693 17.0663 2.90381C18.3309 3.45068 19.432 4.19287 20.3695 5.13037C21.307 6.06787 22.0492 7.1703 22.596 8.43766C23.1429 9.70502 23.4163 11.0569 23.4163 12.4932C23.4163 13.9296 23.1429 15.2794 22.596 16.5427C22.0492 17.806 21.307 18.9092 20.3695 19.8521C19.432 20.7951 18.3295 21.5417 17.0622 22.0917C15.7948 22.6418 14.443 22.9168 13.0066 22.9168ZM13.0127 21.3543C15.4693 21.3543 17.557 20.4906 19.2757 18.7632C20.9945 17.0358 21.8538 14.9437 21.8538 12.4871C21.8538 10.0305 20.9961 7.94287 19.2806 6.22412C17.5651 4.50537 15.4715 3.646 12.9997 3.646C10.5518 3.646 8.46408 4.50374 6.73665 6.21923C5.00922 7.93473 4.14551 10.0284 4.14551 12.5002C4.14551 14.9481 5.00922 17.0358 6.73665 18.7632C8.46408 20.4906 10.5561 21.3543 13.0127 21.3543Z"
-                                                fill="#FD475A" />
-                                        </svg>
-                                        <h5>So sánh</h5>
-                                    </a>
-                                </div>
                             </div>
                             <div class="mySlides_compare_pp compare-pp-product-detail1" style="display: flex;">
                                 <div class="compare-pp-product-detail">
@@ -3995,32 +3950,6 @@
                                     <div class="compare-pp-product-detail-name">
                                         <h3>Samsung Galaxy S22 Ultra
                                             12/128GB 3</h3>
-                                    </div>
-                                    <div class="compare-pp-product-detail-price">
-                                        <h2>24.990.000 ₫</h2>
-                                        <p>30.990.000 ₫</p>
-                                    </div>
-                                    <div class="compare-pp-product-detail-save">
-                                        <h4>Bảo hành: <span>10 Tháng</span></h4>
-                                    </div>
-                                    <a class="compare-pp-product-detail-add" onclick="compare_add()">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25"
-                                            viewBox="0 0 26 25" fill="none">
-                                            <path
-                                                d="M12.2965 17.7085H13.859V13.3856H18.208V11.8231H13.859V7.29183H12.2965V11.8231H7.79134V13.3856H12.2965V17.7085ZM13.0066 22.9168C11.5702 22.9168 10.2204 22.6434 8.95712 22.0965C7.69382 21.5496 6.58908 20.8031 5.6429 19.8569C4.69672 18.9108 3.9502 17.8054 3.40332 16.5408C2.85645 15.2762 2.58301 13.925 2.58301 12.4871C2.58301 11.0493 2.85645 9.69811 3.40332 8.43352C3.9502 7.16892 4.69672 6.06787 5.6429 5.13037C6.58908 4.19287 7.69448 3.45068 8.95908 2.90381C10.2237 2.35693 11.5749 2.0835 13.0127 2.0835C14.4505 2.0835 15.8017 2.35693 17.0663 2.90381C18.3309 3.45068 19.432 4.19287 20.3695 5.13037C21.307 6.06787 22.0492 7.1703 22.596 8.43766C23.1429 9.70502 23.4163 11.0569 23.4163 12.4932C23.4163 13.9296 23.1429 15.2794 22.596 16.5427C22.0492 17.806 21.307 18.9092 20.3695 19.8521C19.432 20.7951 18.3295 21.5417 17.0622 22.0917C15.7948 22.6418 14.443 22.9168 13.0066 22.9168ZM13.0127 21.3543C15.4693 21.3543 17.557 20.4906 19.2757 18.7632C20.9945 17.0358 21.8538 14.9437 21.8538 12.4871C21.8538 10.0305 20.9961 7.94287 19.2806 6.22412C17.5651 4.50537 15.4715 3.646 12.9997 3.646C10.5518 3.646 8.46408 4.50374 6.73665 6.21923C5.00922 7.93473 4.14551 10.0284 4.14551 12.5002C4.14551 14.9481 5.00922 17.0358 6.73665 18.7632C8.46408 20.4906 10.5561 21.3543 13.0127 21.3543Z"
-                                                fill="#FD475A" />
-                                        </svg>
-                                        <h5>So sánh</h5>
-                                    </a>
-                                </div>
-                                <div class="compare-pp-product-detail">
-                                    <div class="compare-pp-product-detail-img">
-                                        <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png"
-                                            alt="">
-                                    </div>
-                                    <div class="compare-pp-product-detail-name">
-                                        <h3>Samsung Galaxy S22 Ultra
-                                            12/128GB</h3>
                                     </div>
                                     <div class="compare-pp-product-detail-price">
                                         <h2>24.990.000 ₫</h2>
@@ -4119,32 +4048,6 @@
                                         <h5>So sánh</h5>
                                     </a>
                                 </div>
-                                <div class="compare-pp-product-detail">
-                                    <div class="compare-pp-product-detail-img">
-                                        <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png"
-                                            alt="">
-                                    </div>
-                                    <div class="compare-pp-product-detail-name">
-                                        <h3>Samsung Galaxy S22 Ultra
-                                            12/128GB</h3>
-                                    </div>
-                                    <div class="compare-pp-product-detail-price">
-                                        <h2>24.990.000 ₫</h2>
-                                        <p>30.990.000 ₫</p>
-                                    </div>
-                                    <div class="compare-pp-product-detail-save">
-                                        <h4>Bảo hành: <span>10 Tháng</span></h4>
-                                    </div>
-                                    <a class="compare-pp-product-detail-add" onclick="compare_add()">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25"
-                                            viewBox="0 0 26 25" fill="none">
-                                            <path
-                                                d="M12.2965 17.7085H13.859V13.3856H18.208V11.8231H13.859V7.29183H12.2965V11.8231H7.79134V13.3856H12.2965V17.7085ZM13.0066 22.9168C11.5702 22.9168 10.2204 22.6434 8.95712 22.0965C7.69382 21.5496 6.58908 20.8031 5.6429 19.8569C4.69672 18.9108 3.9502 17.8054 3.40332 16.5408C2.85645 15.2762 2.58301 13.925 2.58301 12.4871C2.58301 11.0493 2.85645 9.69811 3.40332 8.43352C3.9502 7.16892 4.69672 6.06787 5.6429 5.13037C6.58908 4.19287 7.69448 3.45068 8.95908 2.90381C10.2237 2.35693 11.5749 2.0835 13.0127 2.0835C14.4505 2.0835 15.8017 2.35693 17.0663 2.90381C18.3309 3.45068 19.432 4.19287 20.3695 5.13037C21.307 6.06787 22.0492 7.1703 22.596 8.43766C23.1429 9.70502 23.4163 11.0569 23.4163 12.4932C23.4163 13.9296 23.1429 15.2794 22.596 16.5427C22.0492 17.806 21.307 18.9092 20.3695 19.8521C19.432 20.7951 18.3295 21.5417 17.0622 22.0917C15.7948 22.6418 14.443 22.9168 13.0066 22.9168ZM13.0127 21.3543C15.4693 21.3543 17.557 20.4906 19.2757 18.7632C20.9945 17.0358 21.8538 14.9437 21.8538 12.4871C21.8538 10.0305 20.9961 7.94287 19.2806 6.22412C17.5651 4.50537 15.4715 3.646 12.9997 3.646C10.5518 3.646 8.46408 4.50374 6.73665 6.21923C5.00922 7.93473 4.14551 10.0284 4.14551 12.5002C4.14551 14.9481 5.00922 17.0358 6.73665 18.7632C8.46408 20.4906 10.5561 21.3543 13.0127 21.3543Z"
-                                                fill="#FD475A" />
-                                        </svg>
-                                        <h5>So sánh</h5>
-                                    </a>
-                                </div>
                             </div>
                             <div class="mySlides_compare_pp compare-pp-product-detail1" style="display: flex;">
                                 <div class="compare-pp-product-detail">
@@ -4155,32 +4058,6 @@
                                     <div class="compare-pp-product-detail-name">
                                         <h3>Samsung Galaxy S22 Ultra
                                             12/128GB 5</h3>
-                                    </div>
-                                    <div class="compare-pp-product-detail-price">
-                                        <h2>24.990.000 ₫</h2>
-                                        <p>30.990.000 ₫</p>
-                                    </div>
-                                    <div class="compare-pp-product-detail-save">
-                                        <h4>Bảo hành: <span>10 Tháng</span></h4>
-                                    </div>
-                                    <a class="compare-pp-product-detail-add" onclick="compare_add()">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25"
-                                            viewBox="0 0 26 25" fill="none">
-                                            <path
-                                                d="M12.2965 17.7085H13.859V13.3856H18.208V11.8231H13.859V7.29183H12.2965V11.8231H7.79134V13.3856H12.2965V17.7085ZM13.0066 22.9168C11.5702 22.9168 10.2204 22.6434 8.95712 22.0965C7.69382 21.5496 6.58908 20.8031 5.6429 19.8569C4.69672 18.9108 3.9502 17.8054 3.40332 16.5408C2.85645 15.2762 2.58301 13.925 2.58301 12.4871C2.58301 11.0493 2.85645 9.69811 3.40332 8.43352C3.9502 7.16892 4.69672 6.06787 5.6429 5.13037C6.58908 4.19287 7.69448 3.45068 8.95908 2.90381C10.2237 2.35693 11.5749 2.0835 13.0127 2.0835C14.4505 2.0835 15.8017 2.35693 17.0663 2.90381C18.3309 3.45068 19.432 4.19287 20.3695 5.13037C21.307 6.06787 22.0492 7.1703 22.596 8.43766C23.1429 9.70502 23.4163 11.0569 23.4163 12.4932C23.4163 13.9296 23.1429 15.2794 22.596 16.5427C22.0492 17.806 21.307 18.9092 20.3695 19.8521C19.432 20.7951 18.3295 21.5417 17.0622 22.0917C15.7948 22.6418 14.443 22.9168 13.0066 22.9168ZM13.0127 21.3543C15.4693 21.3543 17.557 20.4906 19.2757 18.7632C20.9945 17.0358 21.8538 14.9437 21.8538 12.4871C21.8538 10.0305 20.9961 7.94287 19.2806 6.22412C17.5651 4.50537 15.4715 3.646 12.9997 3.646C10.5518 3.646 8.46408 4.50374 6.73665 6.21923C5.00922 7.93473 4.14551 10.0284 4.14551 12.5002C4.14551 14.9481 5.00922 17.0358 6.73665 18.7632C8.46408 20.4906 10.5561 21.3543 13.0127 21.3543Z"
-                                                fill="#FD475A" />
-                                        </svg>
-                                        <h5>So sánh</h5>
-                                    </a>
-                                </div>
-                                <div class="compare-pp-product-detail">
-                                    <div class="compare-pp-product-detail-img">
-                                        <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png"
-                                            alt="">
-                                    </div>
-                                    <div class="compare-pp-product-detail-name">
-                                        <h3>Samsung Galaxy S22 Ultra
-                                            12/128GB</h3>
                                     </div>
                                     <div class="compare-pp-product-detail-price">
                                         <h2>24.990.000 ₫</h2>
@@ -4279,32 +4156,6 @@
                                         <h5>So sánh</h5>
                                     </a>
                                 </div>
-                                <div class="compare-pp-product-detail">
-                                    <div class="compare-pp-product-detail-img">
-                                        <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png"
-                                            alt="">
-                                    </div>
-                                    <div class="compare-pp-product-detail-name">
-                                        <h3>Samsung Galaxy S22 Ultra
-                                            12/128GB</h3>
-                                    </div>
-                                    <div class="compare-pp-product-detail-price">
-                                        <h2>24.990.000 ₫</h2>
-                                        <p>30.990.000 ₫</p>
-                                    </div>
-                                    <div class="compare-pp-product-detail-save">
-                                        <h4>Bảo hành: <span>10 Tháng</span></h4>
-                                    </div>
-                                    <a class="compare-pp-product-detail-add" onclick="compare_add()">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25"
-                                            viewBox="0 0 26 25" fill="none">
-                                            <path
-                                                d="M12.2965 17.7085H13.859V13.3856H18.208V11.8231H13.859V7.29183H12.2965V11.8231H7.79134V13.3856H12.2965V17.7085ZM13.0066 22.9168C11.5702 22.9168 10.2204 22.6434 8.95712 22.0965C7.69382 21.5496 6.58908 20.8031 5.6429 19.8569C4.69672 18.9108 3.9502 17.8054 3.40332 16.5408C2.85645 15.2762 2.58301 13.925 2.58301 12.4871C2.58301 11.0493 2.85645 9.69811 3.40332 8.43352C3.9502 7.16892 4.69672 6.06787 5.6429 5.13037C6.58908 4.19287 7.69448 3.45068 8.95908 2.90381C10.2237 2.35693 11.5749 2.0835 13.0127 2.0835C14.4505 2.0835 15.8017 2.35693 17.0663 2.90381C18.3309 3.45068 19.432 4.19287 20.3695 5.13037C21.307 6.06787 22.0492 7.1703 22.596 8.43766C23.1429 9.70502 23.4163 11.0569 23.4163 12.4932C23.4163 13.9296 23.1429 15.2794 22.596 16.5427C22.0492 17.806 21.307 18.9092 20.3695 19.8521C19.432 20.7951 18.3295 21.5417 17.0622 22.0917C15.7948 22.6418 14.443 22.9168 13.0066 22.9168ZM13.0127 21.3543C15.4693 21.3543 17.557 20.4906 19.2757 18.7632C20.9945 17.0358 21.8538 14.9437 21.8538 12.4871C21.8538 10.0305 20.9961 7.94287 19.2806 6.22412C17.5651 4.50537 15.4715 3.646 12.9997 3.646C10.5518 3.646 8.46408 4.50374 6.73665 6.21923C5.00922 7.93473 4.14551 10.0284 4.14551 12.5002C4.14551 14.9481 5.00922 17.0358 6.73665 18.7632C8.46408 20.4906 10.5561 21.3543 13.0127 21.3543Z"
-                                                fill="#FD475A" />
-                                        </svg>
-                                        <h5>So sánh</h5>
-                                    </a>
-                                </div>
                             </div>
                         </div>
 
@@ -4329,8 +4180,6 @@
                                 onclick="currentDiv_compare_pp(5)"></span>
                             <span class=" demo_compare_pp w3-border  compare-pp-paginate-dot"
                                 onclick="currentDiv_compare_pp(6)"></span>
-                            <span class=" demo_compare_pp w3-border  compare-pp-paginate-dot"
-                                onclick="currentDiv_compare_pp(7)"></span>
                         </div>
                     </div>
                 </div>

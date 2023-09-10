@@ -317,7 +317,7 @@ function showDivs_compare_pp(n) {
         dots_compare_pp[i].className = dots_compare_pp[i].className.replaceAll(" w3-badge", "");
       }
 
-  x[slideIndex_compare_pp-1].style.display = "flex";  
+  x[slideIndex_compare_pp-1].style.display = "grid";  
   dots_compare_pp[slideIndex_compare_pp-1].className += " w3-badge";
 // //chạy
 if(stop_compare_pp == 1) {
