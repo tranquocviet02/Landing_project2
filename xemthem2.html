@@ -4,47 +4,170 @@
   <title>Xem thêm ví dụ</title>
 </head>
 <body>
-  <div id="content">
-    <!-- Nội dung ban đầu ở đây -->
-    <p class="xemthem">Điều này là nội dung ban đầu.</p>
-    <p class="xemthem">Điều này là nội dung ban đầu 2.</p>
-    <p class="xemthem">Điều này là nội dung ban đầu.3</p>
-    <p class="xemthem">Điều này là nội dung ban đầu.4</p>
-    <p class="xemthem">Điều này là nội dung ban đầu.5</p>
-  </div>
-  <button id="load-more">Xem thêm</button>
+  <div class="info-right-offer-content-one" id="content-detail">
+    <div class="info-right-offer-content-detail">
+        <div class="icon1">
+            <span>1</span>
+        </div>
+        <p>
+            Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+            <a href="">(Xem chi tiết)</a>
+        </p>
+    </div>
+
+    <div class="info-right-offer-content-detail">
+        <div class="icon1">
+            <span>2</span>
+        </div>
+        <p>
+            Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+            <a href="">(Xem chi tiết)</a>
+        </p>
+    </div>
+
+    <div class="info-right-offer-content-detail">
+        <div class="icon1">
+            <span>3</span>
+        </div>
+        <p>
+            Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+            <a href="">(Xem chi tiết)</a>
+        </p>
+    </div>
+
+    <div class="info-right-offer-content-detail">
+        <div class="icon1">
+            <span>5</span>
+        </div>
+        <p>
+            Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+            <a href="">(Xem chi tiết)</a>
+        </p>
+    </div>
+
+    <div class="info-right-offer-content-detail">
+        <div class="icon1">
+            <span>6</span>
+        </div>
+        <p>
+            Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+            <a href="">(Xem chi tiết)</a>
+        </p>
+    </div>
+
+    <div class="info-right-offer-content-detail">
+        <div class="icon1">
+            <span>7</span>
+        </div>
+        <p>
+            Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+            <a href="">(Xem chi tiết)</a>
+        </p>
+    </div>
+
+    <div class="info-right-offer-content-detail">
+        <div class="icon1">
+            <span>8</span>
+        </div>
+        <p>
+            Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+            <a href="">(Xem chi tiết)</a>
+        </p>
+    </div>
+    <div id="content-hident">
+
+        <div class="info-right-offer-content-detail">
+            <div class="icon1">
+                <span>9</span>
+            </div>
+            <p>
+                Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+                <a href="">(Xem chi tiết)</a>
+            </p>
+        </div>
+
+        <div class="info-right-offer-content-detail">
+            <div class="icon1">
+                <span>10</span>
+            </div>
+            <p>
+                Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+                <a href="">(Xem chi tiết)</a>
+            </p>
+        </div>
+        <div class="info-right-offer-content-detail">
+            <div class="icon1">
+                <span>11</span>
+            </div>
+            <p>
+                Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+                <a href="">(Xem chi tiết)</a>
+            </p>
+        </div>
+        <div class="info-right-offer-content-detail">
+            <div class="icon1">
+                <span>12</span>
+            </div>
+            <p>
+                Giảm thêm tới 500.000đ khi thanh toán qua VNPAY
+                <a href="">(Xem chi tiết)</a>
+            </p>
+        </div>
+    </div>
+    <!-- <button id="see-more-offer-one" type="button">
+        <h3>XEM THÊM ƯU ĐÃI</h3>
+        <img src="./images/Vector.svg" alt="">
+    </button> -->
+</div>
+  <button id="see-more-offer-one">Xem thêm</button>
+  
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
- var x = document.getElementsByClassName("xemthem");
-  const contentContainer = document.getElementById("content");
-  const loadMoreButton = document.getElementById("load-more");
 
-//   // Dữ liệu giả định (mảng các đoạn văn)
-//   const data = [
-//     "Đây là đoạn văn thứ 2.",
-//     "Một đoạn văn khác.",
-//     "Và một đoạn văn cuối cùng."
-//   ];
 
-  let currentIndex = 2; // Index của đoạn văn hiện tại
 
-  // Hàm để thêm nội dung mới vào container
-  function loadMoreContent() {
-    debugger;
-    if (currentIndex < x.length) {
-      const paragraph = document.createElement("p");
-      paragraph.textContent = x[currentIndex];
-      contentContainer.appendChild(paragraph);
-      currentIndex++;
-    } else {
-      loadMoreButton.disabled = true; // Tắt nút khi hết dữ liệu
-    }
+document.addEventListener('DOMContentLoaded', function () {
+  const offerMoreContentone = document.querySelector('.info-right-offer-content-one');
+  var content = document.getElementById('content-detail');
+  var toggleButton = document.getElementById('see-more-offer-one');
+  var isExpanded = false; // Trạng thái mở rộng ban đầu
+
+          // Số lượng phần tử được hiển thị ban đầu
+          var initialItemCount = 2;
+  // Ẩn tất cả nội dung ban đầu nếu không được mở rộng
+  if (!isExpanded) {
+    for (var i = initialItemCount; i < content.children.length; i++) {
+        content.children[i].style.display = 'none';
+      }
   }
 
-  // Xử lý sự kiện khi người dùng nhấp vào nút "Xem thêm"
-  loadMoreButton.addEventListener("click", loadMoreContent);
+
+
+  // Thêm sự kiện click cho nút "Xem thêm / Thu gọn"
+  toggleButton.addEventListener('click', function () {
+    if (isExpanded) {
+      // Nếu đã mở rộng, thu gọn nội dung
+      for (var i = initialItemCount; i < content.children.length; i++) {
+        content.children[i].style.display = 'none';
+      }
+      toggleButton.style.textTransform = 'uppercase';
+      toggleButton.innerHTML = '<h3>Xem thêm bài viết </h3> <i class="fa-solid fa-caret-down"></i>';
+      offerMoreContentone.classList.remove('open');
+    } else {
+      // Nếu chưa mở rộng, hiển thị toàn bộ nội dung
+      for (var i = initialItemCount; i < content.children.length; i++) {
+        content.children[i].style.display = 'inline-flex';
+      }
+      toggleButton.style.textTransform = 'uppercase';
+      toggleButton.innerHTML = '<h3>Thu gọn bài viết </h3> <i class="fa-solid fa-caret-up"></i>';
+      offerMoreContentone.classList.add('open');
+    }
+    // Đảo ngược trạng thái mở rộng
+    isExpanded = !isExpanded;
+  });
 });
+
+    
 
   </script>
 </body>

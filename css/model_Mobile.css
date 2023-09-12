@@ -25,6 +25,30 @@
     justify-content: center;
     align-items: center;
 }
+.close-hover svg {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 0px 7px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: var(--red-red-1, #FD475A);
+    cursor: pointer;
+}
+
+.close-hover:hover svg {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 0px 7px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: var(--red-red-2, #DD283B);
+}
 
 .info-right-speci-dt-title h2 {
     color: var(--black-black-2, #4B4B4B);

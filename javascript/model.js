@@ -1,6 +1,6 @@
 // Get the modal
 var modal = document.getElementById("myModal");
-
+var modal1 = document.getElementById("Mymodaladd");
 // Get the button that opens the modal
 var btn = document.getElementById("see-more-speci");
 

@@ -217,19 +217,16 @@
                         <i class="fa-regular fa-circle-play"></i>
                     </div>
                     <div class="demo_img info-left-img-slider-img-small" onclick="currentDiv_detail(3)">
-                        <img src="./images/s23-ultra-xanh.png.png" alt="">
+                        <img class="img_item" src="./images/s23-ultra-xanh.png.png" alt="">
                     </div>
                     <div class="demo_img info-left-img-slider-img-small" onclick="currentDiv_detail(4)">
-                        <img src="./images/s23-ultra-xanh.png.png" alt="">
+                        <img class="img_item" src="./images/s23-ultra-xanh.png.png" alt="">
                     </div>
                     <div class="demo_img info-left-img-slider-img-small" onclick="currentDiv_detail(5)">
-                        <img src="./images/s23-ultra-xanh.png.png" alt="">
+                        <img class="img_item" src="./images/s23-ultra-xanh.png.png" alt="">
                     </div>
                     <div class="demo_img info-left-img-slider-img-small" onclick="currentDiv_detail(6)">
-                        <img src="./images/s23-ultra-xanh.png.png" alt="">
-                    </div>
-                    <div class="demo_img info-left-img-slider-img-small" onclick="currentDiv_detail(6)">
-                        <img src="./images/s23-ultra-xanh.png.png" alt="">
+                        <img class="img_item" src="./images/s23-ultra-xanh.png.png" alt="">
                     </div>
                 </div>
 
@@ -272,7 +269,7 @@
                         <h3><span>48</span> Cửa hàng còn hàng còn sản phẩm bạn chọn</h3>
                     </div>
 
-                    <div class="info-left-address-list">
+                    <div class="info-left-address-list" id="style-croll">
                         <div class="box-on-stock-address">
                             <div class="box-on-stock-item">
                                 <div class="box-on-stock-item-phone">
@@ -721,12 +718,37 @@
                             <p>(Nhận tại cửa hàng)</p>
                         </button>
                     </div>
-                    <div class="info-right-cart">
+                    <!-- <div class="info-right-cart">
                         <div class="info-cart-young">
                             <img src="./images/shopping-cart.svg" alt="">
                             <h2>
                                 Thêm vào giỏ
                             </h2>
+                        </div>
+                    </div> -->
+                    <div class="info-right-cart">
+                        <div class=" info-cart-young-hover">
+                            <!-- <img src="./images/shopping-cart.svg" alt=""> -->
+                            <a href="" class="info-cart-young">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                    fill="none">
+                                    <path
+                                        d="M16.9271 23.4376C17.9338 23.4376 18.75 22.6214 18.75 21.6147C18.75 20.6079 17.9338 19.7917 16.9271 19.7917C15.9203 19.7917 15.1042 20.6079 15.1042 21.6147C15.1042 22.6214 15.9203 23.4376 16.9271 23.4376Z"
+                                        fill="#FD475A" />
+                                    <path
+                                        d="M8.59376 23.4376C9.60053 23.4376 10.4167 22.6214 10.4167 21.6147C10.4167 20.6079 9.60053 19.7917 8.59376 19.7917C7.58699 19.7917 6.77084 20.6079 6.77084 21.6147C6.77084 22.6214 7.58699 23.4376 8.59376 23.4376Z"
+                                        fill="#FD475A" />
+                                    <path
+                                        d="M5.04168 4.10409L4.83334 6.65617C4.79168 7.14575 5.17709 7.552 5.66668 7.552H21.6146C22.0521 7.552 22.4167 7.21867 22.4479 6.78117C22.5833 4.93742 21.1771 3.43742 19.3333 3.43742H6.53126C6.42709 2.97909 6.21876 2.54159 5.89584 2.177C5.37501 1.62492 4.64584 1.302 3.89584 1.302H2.08334C1.65626 1.302 1.30209 1.65617 1.30209 2.08325C1.30209 2.51034 1.65626 2.8645 2.08334 2.8645H3.89584C4.21876 2.8645 4.52084 2.99992 4.73959 3.22909C4.95834 3.46867 5.06251 3.78117 5.04168 4.10409Z"
+                                        fill="#FD475A" />
+                                    <path
+                                        d="M21.3646 9.1145H5.38543C4.94793 9.1145 4.59376 9.44783 4.5521 9.87492L4.1771 14.4062C4.03126 16.1874 5.4271 17.7083 7.20835 17.7083H18.7917C20.3542 17.7083 21.7292 16.427 21.8438 14.8645L22.1875 9.99992C22.2292 9.52075 21.8542 9.1145 21.3646 9.1145Z"
+                                        fill="#FD475A" />
+                                </svg>
+                                <h2>
+                                    Thêm vào giỏ
+                                </h2>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1020,12 +1042,13 @@
         </section>
 
         <section id="accessory" onclick="myfunctionStop_accessory()">
-            <div class="accessory-title">
-                <img src="./images/Heading_phukien.png" alt="">
-            </div>
+            <DIV class="ask-title-banner">
+                <img src="./images/Rectangle 49.svg" alt="">
+                <h3>Phụ kiện thường mua cùng</h3>
+            </DIV>
             <div class="accessory-all-product" id="product-container">
                 <div class="mySlides_accessory accessory-product-detail1">
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1040,10 +1063,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1058,10 +1083,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1076,10 +1103,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1094,12 +1123,14 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="mySlides_accessory accessory-product-detail1">
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1114,7 +1145,9 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
                     <div class="product-detail-none">
@@ -1134,7 +1167,7 @@
                     </div>
                 </div>
                 <div class="mySlides_accessory accessory-product-detail1">
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1149,10 +1182,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1167,10 +1202,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1185,10 +1222,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1203,86 +1242,14 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides_accessory accessory-product-detail1">
-                    <div class="accessory-product-detail">
-                        <div class="accessory-product-detail-img">
-                            <img src="./images/03_2_6.jpg.png" alt="">
-                        </div>
-                        <div class="accessory-product-detail-name">
-                            <h3>Phụ kiện Samsung</h3>
-                        </div>
-                        <div class="accessory-product-detail-price">
-                            <h2>24.990.000 ₫</h2>
-                            <p>30.990.000 ₫</p>
-                        </div>
-                        <div class="accessory-product-detail-save">
-                            <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
-                        </div>
-                        <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
-                        </div>
-                    </div>
-                    <div class="accessory-product-detail">
-                        <div class="accessory-product-detail-img">
-                            <img src="./images/03_2_6.jpg.png" alt="">
-                        </div>
-                        <div class="accessory-product-detail-name">
-                            <h3>Phụ kiện Samsung</h3>
-                        </div>
-                        <div class="accessory-product-detail-price">
-                            <h2>24.990.000 ₫</h2>
-                            <p>30.990.000 ₫</p>
-                        </div>
-                        <div class="accessory-product-detail-save">
-                            <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
-                        </div>
-                        <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
-                        </div>
-                    </div>
-                    <div class="accessory-product-detail">
-                        <div class="accessory-product-detail-img">
-                            <img src="./images/03_2_6.jpg.png" alt="">
-                        </div>
-                        <div class="accessory-product-detail-name">
-                            <h3>Phụ kiện Samsung</h3>
-                        </div>
-                        <div class="accessory-product-detail-price">
-                            <h2>24.990.000 ₫</h2>
-                            <p>30.990.000 ₫</p>
-                        </div>
-                        <div class="accessory-product-detail-save">
-                            <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
-                        </div>
-                        <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
-                        </div>
-                    </div>
-                    <div class="accessory-product-detail">
-                        <div class="accessory-product-detail-img">
-                            <img src="./images/03_2_6.jpg.png" alt="">
-                        </div>
-                        <div class="accessory-product-detail-name">
-                            <h3>Phụ kiện Samsung</h3>
-                        </div>
-                        <div class="accessory-product-detail-price">
-                            <h2>24.990.000 ₫</h2>
-                            <p>30.990.000 ₫</p>
-                        </div>
-                        <div class="accessory-product-detail-save">
-                            <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
-                        </div>
-                        <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="mySlides_accessory accessory-product-detail1">
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1297,10 +1264,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1315,10 +1284,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1333,10 +1304,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1351,12 +1324,14 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="mySlides_accessory accessory-product-detail1">
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1366,15 +1341,17 @@
                         <div class="accessory-product-detail-price">
                             <h2>24.990.000 ₫</h2>
                             <p>30.990.000 ₫</p>
-                        </div>
+                        </div>font-family: Inter;
                         <div class="accessory-product-detail-save">
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1389,10 +1366,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1407,10 +1386,12 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="accessory-product-detail">
+                    <div class="accessory-product-detail min-height-397">
                         <div class="accessory-product-detail-img">
                             <img src="./images/03_2_6.jpg.png" alt="">
                         </div>
@@ -1425,7 +1406,91 @@
                             <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
                         </div>
                         <div class="accessory-product-detail-add">
-                            <h5>Thêm vào giỏ hàng</h5>
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides_accessory accessory-product-detail1">
+                    <div class="accessory-product-detail min-height-397">
+                        <div class="accessory-product-detail-img">
+                            <img src="./images/03_2_6.jpg.png" alt="">
+                        </div>
+                        <div class="accessory-product-detail-name">
+                            <h3>Phụ kiện Samsung</h3>
+                        </div>
+                        <div class="accessory-product-detail-price">
+                            <h2>24.990.000 ₫</h2>
+                            <p>30.990.000 ₫</p>
+                        </div>
+                        <div class="accessory-product-detail-save">
+                            <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
+                        </div>
+                        <div class="accessory-product-detail-add">
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accessory-product-detail min-height-397">
+                        <div class="accessory-product-detail-img">
+                            <img src="./images/03_2_6.jpg.png" alt="">
+                        </div>
+                        <div class="accessory-product-detail-name">
+                            <h3>Phụ kiện Samsung</h3>
+                        </div>
+                        <div class="accessory-product-detail-price">
+                            <h2>24.990.000 ₫</h2>
+                            <p>30.990.000 ₫</p>
+                        </div>
+                        <div class="accessory-product-detail-save">
+                            <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
+                        </div>
+                        <div class="accessory-product-detail-add">
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accessory-product-detail min-height-397">
+                        <div class="accessory-product-detail-img">
+                            <img src="./images/03_2_6.jpg.png" alt="">
+                        </div>
+                        <div class="accessory-product-detail-name">
+                            <h3>Phụ kiện Samsung</h3>
+                        </div>
+                        <div class="accessory-product-detail-price">
+                            <h2>24.990.000 ₫</h2>
+                            <p>30.990.000 ₫</p>
+                        </div>
+                        <div class="accessory-product-detail-save">
+                            <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
+                        </div>
+                        <div class="accessory-product-detail-add">
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accessory-product-detail min-height-397">
+                        <div class="accessory-product-detail-img">
+                            <img src="./images/03_2_6.jpg.png" alt="">
+                        </div>
+                        <div class="accessory-product-detail-name">
+                            <h3>Phụ kiện Samsung</h3>
+                        </div>
+                        <div class="accessory-product-detail-price">
+                            <h2>24.990.000 ₫</h2>
+                            <p>30.990.000 ₫</p>
+                        </div>
+                        <div class="accessory-product-detail-save">
+                            <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
+                        </div>
+                        <div class="accessory-product-detail-add">
+                            <a href="">
+                                <h5>Thêm vào giỏ hàng</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1450,12 +1515,21 @@
         </section>
 
         <section id="compare" onclick="myfunctionStop_compare() ">
-            <div class="compare-title">
-                <img src="./images/Heading_sosanh.png" alt="">
-            </div>
-            <div class="compare-search" id="Kwdsearch">
+            <DIV class="ask-title-banner margin-bottom-12">
+                <img src="./images/Rectangle 49.svg" alt="">
+                <h3>so sánh sản phẩm</h3>
+            </DIV>
+            <!-- <div class="compare-search" id="Kwdsearch">
                 <form method="get" onclick="onclickSearch()" action="/tim-kiem" onsubmit="">
                     <div class="compare-search-detail">
+                        <input type="text" placeholder="Chọn sản phẩm muốn so sánh">
+                        <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div> -->
+            <div class="compare-pp-search justify-content-center" id="Kwdsearch">
+                <form method="get" class="with907px" onclick="onclickSearch()" action="/tim-kiem" onsubmit="">
+                    <div class="compare-pp-search-detail">
                         <input type="text" placeholder="Chọn sản phẩm muốn so sánh">
                         <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
@@ -2035,9 +2109,10 @@
         </section>
 
         <section id="new" onclick="myfunctionStop_new() ">
-            <div class="new-title">
-                <img src="./images/Heading_thucu.png" alt="">
-            </div>
+            <DIV class="ask-title-banner">
+                <img src="./images/Rectangle 49.svg" alt="">
+                <h3>thu cũ đổi mới</h3>
+            </DIV>
             <div class="new-all-product">
                 <div class="mySlides_new new-product-detail1">
                     <div class="new-product-detail">
@@ -2424,9 +2499,10 @@
 
 
         <section id="machine" onclick="myfunctionStop_machine()">
-            <div class="machine-title">
-                <img src="./images/machine.png" alt="">
-            </div>
+            <DIV class="ask-title-banner">
+                <img src="./images/Rectangle 49.svg" alt="">
+                <h3>MÁY CŨ GIÁ TỐT GẦN BẠN</h3>
+            </DIV>
             <div class="machine-all-product" id="product-container">
                 <div class="mySlides_machine machine-product-detail1">
                     <div class="machine-product-detail">
@@ -2917,9 +2993,10 @@
         </section>
 
         <section id="news" onclick="myfunctionStop_news()">
-            <div class="news-title">
-                <img src="./images/Heading_tintuc.png" alt="">
-            </div>
+            <DIV class="ask-title-banner">
+                <img src="./images/Rectangle 49.svg" alt="">
+                <h3>TIN TỨC LIÊN QUAN</h3>
+            </DIV>
             <div class="news-all-product" id="product-container-news">
                 <div class=" news-product-detail1 mySlides_news">
                     <div class="news-product-detail">
@@ -3099,8 +3176,8 @@
 
         <section id="ask">
             <div class="ask-title">
-                <DIV class="ask-title-img">
-                    <img src="./images/Rectangle 49.png" alt="">
+                <DIV class="ask-title-banner">
+                    <img src="./images/Rectangle 49.svg" alt="">
                     <h3>HỎI VÀ ĐÁP</h3>
                 </DIV>
             </div>
@@ -3139,17 +3216,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3176,17 +3271,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3216,17 +3329,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3253,17 +3384,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3293,17 +3442,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3330,17 +3497,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3370,17 +3555,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3407,17 +3610,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3447,17 +3668,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3484,17 +3723,35 @@
                                 thì bù bao nhiêu ạ</h4>
                             <div class="ask-comment-client-clock">
                                 <div class="cmt-like-dl">
-                                    <div class="cmt-gio">
+                                    <div class="cmt-gio ask-comment-cmt">
                                         <a href="">
-                                            <img src="./images/like.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M2.37988 18.3499V8.5499C2.37988 7.1499 2.97988 6.6499 4.37988 6.6499H5.37988C6.77988 6.6499 7.37988 7.1499 7.37988 8.5499V18.3499C7.37988 19.7499 6.77988 20.2499 5.37988 20.2499H4.37988C2.97988 20.2499 2.37988 19.7499 2.37988 18.3499Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                         <h3>10</h3>
                                     </div>
                                     <p>.</p>
-                                    <div class="cmt-phut">
+                                    <div class="cmt-phut ask-comment-cmt">
                                         <h3>2</h3>
                                         <a href="">
-                                            <img src="./images/dislike.png" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.52 5.65003L13.42 3.25003C13.02 2.85003 12.12 2.65003 11.52 2.65003L7.72002 2.65003C6.52002 2.65003 5.22002 3.55003 4.92002 4.75003L2.52002 12.05C2.02002 13.45 2.92002 14.65 4.42002 14.65L8.42002 14.65C9.02002 14.65 9.52002 15.15 9.42002 15.85L8.92002 19.05C8.72002 19.95 9.32002 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45"
+                                                    stroke="#009981" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M21.6201 5.6501L21.6201 15.4501C21.6201 16.8501 21.0201 17.3501 19.6201 17.3501L18.6201 17.3501C17.2201 17.3501 16.6201 16.8501 16.6201 15.4501L16.6201 5.6501C16.6201 4.2501 17.2201 3.7501 18.6201 3.7501L19.6201 3.7501C21.0201 3.7501 21.6201 4.2501 21.6201 5.6501Z"
+                                                    stroke="#009981" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
                                     </div>
                                 </div>
@@ -3518,7 +3775,13 @@
                 khác!</label>
             <a href="javascript:;" onclick="clearCompare();" class="clearall">
                 <p>Thu gọn</p>
-                <img src="./images/keyboard_arrow.svg" alt="">
+                <!-- <img src="./images/keyboard_arrow.svg" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7" viewBox="0 0 13 7" fill="none">
+                    <path d="M6.25 6.60938L0 0.390625H12.5L6.25 6.60938Z" />
+                  </svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7" viewBox="0 0 13 7" fill="none">
+                    <path d="M6.25 6.60938L0 0.390625H12.5L6.25 6.60938Z" />
+                </svg>
             </a>
             <ul class="listcompare" data-catename="điện thoại">
                 <li>
@@ -3589,9 +3852,17 @@
         <section id="Mymodaladd" class="popup" style="display: none;">
             <div class="bg-popup"></div>
             <div class="popup_addsp">
-                <div class="close-popup">
+                <!-- <div class="close-popup">
                     <span>Nhập tên để tìm</span>
                     <img src="./images/Close button.png" alt="" onclick="ClosePopup()">
+                </div> -->
+                <div class="close-popup close-hover">
+                    <span>Nhập tên để tìm</span>
+                    <!-- <img src="./images/Close button.png" alt="" onclick="ClosePopup()"> -->
+                    <svg onclick="ClosePopup()" xmlns="http://www.w3.org/2000/svg" width="16" height="4"
+                        viewBox="0 0 16 4" fill="none">
+                        <path d="M0 2L16 2" stroke="white" stroke-width="4" />
+                    </svg>
                 </div>
                 <div class="compare-pp-search" id="Kwdsearch">
                     <form method="get" onclick="onclickSearch()" action="/tim-kiem" onsubmit="">
@@ -4178,9 +4449,7 @@
 
 
 
-    <script src="./javascript/js.js"></script>
-    <script src="./javascript/ww3school.js"></script>
-    <script src="./javascript/model.js"></script>
+    <script src="./javascript/function.js"></script>
 </body>
 
 </html>

@@ -215,18 +215,21 @@ function showDivs_detail(n) {
   var x = document.getElementsByClassName("mySlides_detail");
   var dots_detail = document.getElementsByClassName("demo_detail");
   var dots_img = document.getElementsByClassName("demo_img");
+  var img_item = document.getElementsByClassName("img_item");
+  var slider_right = document.getElementById("button-slider-right-detail");
   if (n > x.length) {slideIndex_detail = 1}
   if (n < 1) {slideIndex_detail = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots_detail.length; i++) {
-    dots_detail[i].className = dots_detail[i].className.replaceAll(" w3-badge", "");
+    dots_detail[i].className = dots_detail[i].className.replaceAll(" w3-badge1", "");
     dots_img[i].className = dots_img[i].className.replaceAll(" w3_opacity", "");
+    // img_item[i].className = img_item[i].className.replaceAll(" w3_opacity1", "");
       }
 
   x[slideIndex_detail-1].style.display = "flex";  
-  dots_detail[slideIndex_detail-1].className += " w3-badge";
+  dots_detail[slideIndex_detail-1].className += " w3-badge1";
   dots_img[slideIndex_detail-1].className += " w3_opacity";
 // //chạy
 // if(stop_compare == 1) {
@@ -327,12 +330,15 @@ if(stop_compare_pp == 1) {
 }
 
 
-function onclickSearch(){
-  var addsearch = document.getElementById("compare-search");
-  addsearch.classList.add("no-scroll");
-  addsearch.classList.add("k-overlay");
-
-}
+// function onclickSearch(){
+//   var element = document.getElementById("formdetail");
+//   element.classList.add("input-focus");
+//   window.addEventListener("click", function (event) {
+//     if (event.target === modal) {
+//         modal.classList.remove("input-focus");
+//     }
+// })
+// }
 
 // Get the button that opens the modal
 var clearall = document.getElementsByClassName("clearall");
@@ -398,7 +404,7 @@ function displayNextItems() {
     const endIndex = currentIndex + itemsPerPage;
     for (let i = currentIndex; i < endIndex && i < data.length; i++) {
         data.itemsPerPage < data[i]
-        data[i].style.display = "block";
+        data[i].style.display = "flex";
     }
     currentIndex = endIndex;
 

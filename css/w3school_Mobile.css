@@ -1,7 +1,7 @@
 .w3-badge {
     /* border-radius: 12px; */
     border-radius: 12px !important;
-    background-color: var(--green-green-1, #009981) !important;
+    background: var(--white-white-1, #FFF) !important;
 }
 .w3-opacity-off1,.w3-hover-opacity-off1:hover {
     opacity: 1
