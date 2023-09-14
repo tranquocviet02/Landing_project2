@@ -1,34 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
- */
 
-:root {
-    --font-size-7: 7px;
-    --font-size-8: 8px;
-    --font-size-9: 9px;
-    --font-size-10: 10px;
-    --font-size-11: 11px;
-    --font-size-12: 12px;
-    --font-size-13: 13px;
-    --font-size-14: 14px;
-    --font-size-15: 15px;
-    --font-size-16: 16px;
-    --font-size-17: 17px;
-    --font-size-18: 18px;
-    --font-size-19: 19px;
-    --font-size-20: 20px;
-    --font-size-21: 21px;
-    --font-size-22: 22px;
-    --font-size-23: 23px;
-    --font-size-24: 24px;
-    --font-size-25: 25px;
-    --font-size-26: 26px;
-    --font-size-27: 27px;
-    --font-size-28: 28px;
-    --font-size-29: 29px;
-    --font-size-30: 30px;
-
-    --background-color-green: var(--green-200483-d-500, #00483D);
-}
 
 body {
     font-family: 'Inter';
@@ -55,7 +25,7 @@ body {
 
 header {
     font-family: 'Inter';
-    max-width: 414px;
+    max-width: 415px;
     height: 60px;
     margin: 0 auto;
     background-color: #00483D;
@@ -67,7 +37,7 @@ header {
 
 main {
     font-family: 'Inter';
-    max-width: 414px;
+    max-width: 415px;
     height: auto;
     margin: 0 auto;
     background: #f4f4f4;
@@ -96,13 +66,14 @@ body.no-scroll {
 }
 
 .ContainerMB {
-    max-width: 414px;
+    max-width: 415px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
 
 .ContainerMB .header_nav {
     display: flex;
@@ -122,6 +93,9 @@ body.no-scroll {
     padding: 20px 0;
 } */
 
+.backgroound-FC521D{
+background: var(--other-orange-1, #FC521D) !important;
+}
 .header_nav ul {
     display: flex;
     justify-content: start;
@@ -1287,6 +1261,42 @@ border: 1px solid var(--black-black-3, #C9C9C9);
     line-height: normal;
 }
 
+.info-right-flashsale .info-right-flashsale-price {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-right-flashsale .info-right-flashsale-price svg{
+    width: 12.219px;
+    height: 17.269px;
+}
+
+.info-right-flashsale .info-right-flashsale-price h4{
+    color: var(--white-white-1, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* H7/Regular (13) */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.info-right-flashsale .info-right-flashsale-price b{
+    color: var(--white-white-1, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* H7/Bold (13) */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 .info-right-versions {
     max-width: 382px;
     height: auto;
@@ -2987,10 +2997,12 @@ border: 1px solid var(--black-black-3, #C9C9C9);
 
 .info-right-speci-content table tbody tr:nth-child(even) {
     background-color: #ffffff;
+    display: flex;
 }
 
 .info-right-speci-content table tbody tr:nth-child(odd) {
     background-color: #EBEBEB;
+    display: flex;
 }
 
 .info-right-speci-content table tbody tr td.table-title {
@@ -4025,6 +4037,11 @@ background: var(--white-white-1, #FFF);
 
 }
 
+textarea:focus {
+    border: 2px solid #009981 !important;
+    border-radius: 10px !important;
+}
+
 .ask-content-form form .ask-content-input input {
     display: flex;
     width: 263px;
@@ -4033,6 +4050,17 @@ background: var(--white-white-1, #FFF);
     gap: 10px;
     border-radius: 5px;
     border: 1px solid var(--black-black-3, #C9C9C9);
+    background: var(--white-white-1, #FFF);
+}
+
+.ask-content-form form .ask-content-input input:focus {
+    display: flex;
+    width: 263px;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    border: 2px solid #009981 !important;
     background: var(--white-white-1, #FFF);
 }
 
@@ -4491,6 +4519,7 @@ top: 2px; */
     border-radius: 5px;
     border: 1px solid var(--black-black-3, #C9C9C9);
     background: var(--white-white-1, #FFF);
+    cursor: pointer;
 }
 
 .btnxemthem_cmt h3 {
@@ -4568,11 +4597,12 @@ top: 2px; */
     align-items: flex-start;
     gap: 8px;
     max-width: 382PX;
+
 }
 
 .section-ss1 .s1 .s1-compare-text {
     display: flex;
-    padding: 12px 0px 0px;
+    padding: 12px 12px 0px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -4672,6 +4702,7 @@ top: 2px; */
     border-top: 1px solid var(--black-black-3, #C9C9C9);
     border-bottom: 1px solid var(--black-black-3, #C9C9C9);
     border-left: 1px solid var(--black-black-3, #C9C9C9);
+    /* border-right: 1px solid var(--black-black-3, #C9C9C9); */
     background: var(--white-white-1, #FFF);
     cursor: pointer;
 }
@@ -4773,7 +4804,7 @@ top: 2px; */
 
 .s1 .s1-compare-detail1 .s1-compare-detail-insert {
     display: flex;
-    padding: 87.5px 28px;
+    padding: 71.5px 0px;
     flex-direction: column;
     align-items: center;
     gap: 12px;
@@ -4826,6 +4857,7 @@ top: 2px; */
     border-top: 1px solid var(--black-black-3, #C9C9C9);
     border-bottom: 1px solid var(--black-black-3, #C9C9C9);
     border-left: 1px solid var(--black-black-3, #C9C9C9);
+    border-right: 1px solid var(--black-black-3, #C9C9C9);
     background: var(--white-white-1, #FFF);
     cursor: pointer;
 }
@@ -4924,7 +4956,7 @@ top: 2px; */
 
 .s1 .s1-compare-detail .s1-compare-detail-insert {
     display: flex;
-    padding: 87.5px 28px;
+    padding: 87.5px 27px;
     flex-direction: column;
     align-items: center;
     gap: 12px;
@@ -5003,7 +5035,9 @@ top: 2px; */
 }
 
 
-
+.border-right-none{
+    border-right: 0px !important;
+}
 ul.listcompare1 {
     grid-auto-rows: minmax(min-content, max-content);
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -5023,7 +5057,8 @@ ul.listcompare1 {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     display: inline-flex;
-    max-width: 382px;
+    /* max-width: 382px; */
+    padding: 17px;
 }
 
 ul.listcompare {
@@ -5042,6 +5077,46 @@ ul.listcompare {
     /* border: unset; */
 }
 
+.stickcompare.stickcompare_new .listcompare .compare-all-none {
+    display: flex;
+    padding: 53px 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.stickcompare.stickcompare_new .listcompare .compare-all-none a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+border: 1px dashed var(--black-black-3, #C9C9C9);
+background: var(--white-white-1, #FFF);
+}
+
+.stickcompare.stickcompare_new .listcompare .compare-all-none a img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.stickcompare.stickcompare_new .listcompare .compare-all-none p {
+    color: var(--black-black-1, #191919);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* H7/Regular (13) */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 113px;
+}
+
 
 .stickcompare.stickcompare_new .listcompare li img {
     width: 103px;
@@ -5049,10 +5124,25 @@ ul.listcompare {
     flex-shrink: 0;
 }
 
+.stickcompare.stickcompare_new .listcompare li p {
+    color: var(--black-black-1, #191919);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* H7/Regular (13) */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 111.7px;
+}
+
 .stickcompare.stickcompare_new .listcompare li {
     width: 100%;
     border-right: 1px solid #e0e0e0;
     padding-top: 0;
+    max-height: 183px;
 }
 
 .closecompare {
@@ -5109,9 +5199,9 @@ a {
     overflow: visible;
     position: relative;
     display: block;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 191px;
-    border-right: 1px solid #e0e0e0;
+    /* border-right: 1px solid #e0e0e0; */
     padding-top: 0;
 }
 
@@ -5119,7 +5209,7 @@ a {
     overflow: visible;
     position: relative;
     display: block;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 139px;
     border-right: 0.5px solid #e0e0e0;
     padding-top: 0;
@@ -5204,9 +5294,51 @@ a {
     flex-shrink: 0;
 }
 
+.stickcompare.stickcompare_new .listcompare .insert-none {
+    display: flex;
+    padding: 47px 13px;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    justify-content: center;
+    flex-flow: column;
+    width: unset;
+    cursor: pointer;
+}
+
+.stickcompare.stickcompare_new .listcompare .insert-none a{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+border: 1px dashed var(--black-black-3, #C9C9C9);
+background: var(--white-white-1, #FFF);
+}
+
+.stickcompare.stickcompare_new .listcompare .insert-none a img{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.stickcompare.stickcompare_new .listcompare .insert-none p{
+    color: var(--black-black-1, #191919);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 111.7px;
+}
+
 .stickcompare.stickcompare_new .listcompare a {
     display: flex;
-    padding: 12px;
+    padding: 13px;
     flex-direction: column;
     align-items: center;
     gap: 11px;
@@ -5244,6 +5376,8 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    width: 111.7px;
+    height: 48px;
 }
 
 
@@ -5288,7 +5422,7 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 183px;
+    width: 184px;
 }
 
 .stickcompare.stickcompare_new .shorten-comparison .closecompare .doss {
@@ -5341,6 +5475,19 @@ a {
     line-height: normal;
     width: 183px;
 }
+.removeCompare {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    /* width: 14px; */
+    /* height: 20px; */
+    cursor: pointer;
+}
+
+.removeCompare img {
+    width: 25px !important;
+    height: 25px !important;
+}
 
 .removeCompare1 {
     position: absolute;
@@ -5358,7 +5505,7 @@ a {
 
 .removeCompare2 {
     position: absolute;
-    top: 0px;
+    top: 4px;
     right: 0px;
     /* width: 14px; */
     /* height: 20px; */
@@ -5943,7 +6090,7 @@ input:focus {
     font-weight: 400;
     line-height: normal;
     color: #191919;
-    max-width: 191px;
+    width: 138px;
     border-right: 0.1px solid var(--black-black-3, #C9C9C9);
     color: var(--black-black-1, #191919);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -5991,7 +6138,7 @@ input:focus {
     height: auto;
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
+    float: left;
 }
 
 .s2-compare-btn1 {
@@ -6000,7 +6147,8 @@ input:focus {
     gap: 16px;
     padding: 0px;
     background-color: #F4F4F4;
-    max-width: 382px;
+    padding: 0 13px;
+    /* max-width: 382px; */
 }
 
 .s2-compare-btn1 .s2-compare-btn1 {
@@ -6033,6 +6181,20 @@ input:focus {
     cursor: pointer;
 }
 
+.s2-compare-btn1 .s2-compare-btn1 .s2-compare-btn1-now button:hover {
+    display: flex;
+    width: 119px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--red-red-2, #DD283B);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
 .s2-compare-btn1 .s2-compare-btn1 .s2-compare-btn1-now button h2 {
     color: var(--white-white-1, #FFF);
     text-align: center;
@@ -6049,7 +6211,6 @@ input:focus {
 .s2-compare-btn1 .s2-compare-btn1 .s2-compare-btn1-instm0 {
     display: flex;
     width: 100%;
-    padding: 12px 56px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -6069,6 +6230,22 @@ input:focus {
     background: var(--green-green-1, #009981);
     border: 0px;
     width: 119px;
+    padding: 12px 0px;
+    border-radius: 5px;
+}
+
+.s2-compare-btn1 .s2-compare-btn1 .s2-compare-btn1-instm0 button:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-green-2, #006555);
+
+    border: 0px;
+    width: 119px;
+    padding: 12px 0px;
+    border-radius: 5px;
 }
 
 .s2-compare-btn1 .s2-compare-btn1 .s2-compare-btn1-instm0 button h2 {
@@ -6105,7 +6282,6 @@ input:focus {
 .s2-compare-btn1 .s2-compare-btn1 .s2-compare-btn1-instmcart {
     display: flex;
     width: 119px;
-    padding: 12px 56px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -6125,8 +6301,23 @@ input:focus {
     background: var(--green-green-1, #009981);
     border: 0px;
     width: 119px;
+    border-radius: 5px;
+    padding: 12px 0px;
 }
 
+.s2-compare-btn1 .s2-compare-btn1 .s2-compare-btn1-instmcart button:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-green-2, #006555);
+
+    border: 0px;
+    width: 119px;
+    border-radius: 5px;
+    padding: 12px 0px;
+}
 .s2-compare-btn1 .s2-compare-btn1 .s2-compare-btn1-instmcart button h2 {
     color: var(--white-white-1, #FFF);
     text-align: center;
@@ -6167,7 +6358,8 @@ input:focus {
     gap: 32px;
     padding: 0px;
     background-color: #F4F4F4;
-    max-width: 382px;
+    /* max-width: 382px; */
+    padding: 0 13px;
 }
 
 .s2-compare-btn .s2-compare-btn1 {
@@ -6198,6 +6390,20 @@ input:focus {
     cursor: pointer;
 }
 
+.s2-compare-btn .s2-compare-btn1 .s2-compare-btn1-now button:hover {
+    display: flex;
+    width: 159px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--red-red-2, #DD283B);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
 .s2-compare-btn .s2-compare-btn1 .s2-compare-btn1-now button h2 {
     color: var(--white-white-1, #FFF);
     text-align: center;
@@ -6213,8 +6419,7 @@ input:focus {
 
 .s2-compare-btn .s2-compare-btn1 .s2-compare-btn1-instm0 {
     display: flex;
-    width: 159px;
-    padding: 12px 56px;
+    max-width: 159px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -6233,6 +6438,20 @@ input:focus {
     gap: 5px;
     background: var(--green-green-1, #009981);
     border: 0px;
+    padding: 12px 9.5px;
+    border-radius: 5px;
+}
+
+.s2-compare-btn .s2-compare-btn1 .s2-compare-btn1-instm0 button:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-green-2, #006555);
+    border: 0px;
+    padding: 12px 9.5px;
+    border-radius: 5px;
 }
 
 .s2-compare-btn .s2-compare-btn1 .s2-compare-btn1-instm0 button h2 {
@@ -6268,8 +6487,7 @@ input:focus {
 
 .s2-compare-btn .s2-compare-btn1 .s2-compare-btn1-instmcart {
     display: flex;
-    width: 159px;
-    padding: 12px 56px;
+    max-width: 159px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -6288,6 +6506,20 @@ input:focus {
     gap: 5px;
     background: var(--green-green-1, #009981);
     border: 0px;
+    padding: 12px 9.5px;
+    border-radius: 5px;
+}
+
+.s2-compare-btn .s2-compare-btn1 .s2-compare-btn1-instmcart button:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-green-2, #006555);
+    border: 0px;
+    padding: 12px 9.5px;
+    border-radius: 5px;
 }
 
 .s2-compare-btn .s2-compare-btn1 .s2-compare-btn1-instmcart button h2 {
@@ -6355,7 +6587,20 @@ background: var(--red-red-1, #FD475A);
     text-decoration: none;
     border: none;
     cursor: pointer;
+}
 
+.s2-compare-btn .s2-compare-btn2 .s2-compare-btn2-now button:hover {
+    display: flex;
+    width: 159px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--red-red-2, #DD283B);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .s2-compare-btn .s2-compare-btn2 .s2-compare-btn2-now button h2 {
@@ -6371,8 +6616,7 @@ background: var(--red-red-1, #FD475A);
 
 .s2-compare-btn .s2-compare-btn2 .s2-compare-btn2-instm0 {
     display: flex;
-    width: 159px;
-    padding: 12px 56px;
+    max-width: 159px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -6392,8 +6636,21 @@ background: var(--red-red-1, #FD475A);
     gap: 5px;
     background: var(--green-green-1, #009981);
     border: 0px;
+    padding: 12px 9.5px;
+    border-radius: 5px;
 }
 
+.s2-compare-btn .s2-compare-btn2 .s2-compare-btn2-instm0 button:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-green-2, #006555);
+    border: 0px;
+    padding: 12px 9.5px;
+    border-radius: 5px;
+}
 .s2-compare-btn .s2-compare-btn2 .s2-compare-btn2-instm0 button h2 {
     color: var(--white-white-1, #FFF);
     text-align: center;
@@ -6428,8 +6685,7 @@ background: var(--red-red-1, #FD475A);
 
 .s2-compare-btn .s2-compare-btn2 .s2-compare-btn2-instmcart {
     display: flex;
-    width: 159px;
-    padding: 12px 56px;
+    max-width: 159px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -6449,6 +6705,20 @@ background: var(--red-red-1, #FD475A);
     gap: 5px;
     background: var(--green-green-1, #009981);
     border: 0px;
+    padding: 12px 9.5px;
+    border-radius: 5px;
+}
+
+.s2-compare-btn .s2-compare-btn2 .s2-compare-btn2-instmcart button:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-green-2, #006555);
+    border: 0px;
+    padding: 12px 9.5px;
+    border-radius: 5px;
 }
 
 .s2-compare-btn .s2-compare-btn2 .s2-compare-btn2-instmcart button h2 {
@@ -6779,4 +7049,19 @@ background: var(--red-red-1, #FD475A);
 .info-right-speci-dt-content-detail table tbody .height-0 {
     background-color: #EBEBEB !important;
     height: 16px;
+}
+.disokay-none1 ,.disokay-none2 , .disokay-none3 {
+    display: none;
+}
+/* .compare-none1,.compare-none2,.compare-none3{
+    display: none;
+} */
+.display1-none1 ,.display1-none2{
+    display: none;
+}
+.display1-none{
+    display: none;
+}
+.with-190px{
+    width: 190px !important;
 }

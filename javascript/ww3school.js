@@ -1,7 +1,6 @@
 
 var slideIndex = 1;
 
-
 var stop_new = 1;
 function myfunctionStop_new() {
   stop_new = 2;

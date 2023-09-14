@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bài tập về jQuery và HTML</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Danh sách mục</h1>
+            <div class="s2-compare-btn1">
+                <div class="s1-detail1">
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-now">
+                        <button>
+                            <h2>
+                                MUA NGAY
+                            </h2>
+                        </button>
+                    </a>
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-instm0">
+                        <button>
+                            <h2>
+                                TRẢ GÓP 0%
+                            </h2>
+                            <p>
+                                Trả trước chỉ từ 10.796.000₫
+                            </p>
+                        </button>
+                    </a>
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-instmcart">
+                        <button>
+                            <h2>
+                                TRẢ GÓP QUA THẺ
+                            </h2>
+                            <p>
+                                (Visa, Mastercard, JCB)
+                            </p>
+                        </button>
+                    </a>
+                </div>
+                <div class="s1-detail2">
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-now">
+                        <button>
+                            <h2>
+                                MUA NGAY
+                            </h2>
+                        </button>
+                    </a>
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-instm0">
+                        <button>
+                            <h2>
+                                TRẢ GÓP 0%
+                            </h2>
+                            <p>
+                                Trả trước chỉ từ 10.796.000₫
+                            </p>
+                        </button>
+                    </a>
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-instmcart">
+                        <button>
+                            <h2>
+                                TRẢ GÓP QUA THẺ
+                            </h2>
+                            <p>
+                                (Visa, Mastercard, JCB)
+                            </p>
+                        </button>
+                    </a>
+                </div>
+                <div class="s1-detail3">
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-now">
+                        <button>
+                            <h2>
+                                MUA NGAY
+                            </h2>
+                        </button>
+                    </a>
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-instm0">
+                        <button>
+                            <h2>
+                                TRẢ GÓP 0%
+                            </h2>
+                            <p>
+                                Trả trước chỉ từ 10.796.000₫
+                            </p>
+                        </button>
+                    </a>
+                    <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                        class="s2-compare-btn1-instmcart">
+                        <button>
+                            <h2>
+                                TRẢ GÓP QUA THẺ
+                            </h2>
+                            <p>
+                                (Visa, Mastercard, JCB)
+                            </p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+                
+    <input type="text" class="new-item" placeholder="Thêm mục mới">
+    <button class="add-button">Thêm</button>
+
+    <script>
+        // Thêm mục mới vào danh sách
+        $(".add-button").click(function() {
+            debugger
+            var newItemText1 = $(".s1-detail1").html();
+            if (newItemText1 !== "") {
+                $(".s2-compare-btn1").append(newItemText1);
+            }
+        });
+
+
+    </script>
+</body>
+</html>

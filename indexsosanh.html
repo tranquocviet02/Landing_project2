@@ -1,62 +1,72 @@
-
 <link rel="stylesheet" href="./css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <main>
     <section class="s1">
-        <div class="s1-compare-text">
-            <p>So sánh sản phẩm</p>
-            <h3>iPhone 14 Pro 256GB</h3>
-            <p>&</p>
-            <h3>iPhone 14 Pro 512GB</h3>
-        </div>
-        <div class="s1-compare-detail">
-            <div class="s1-compare-detail-img">
-                <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png" alt="">
-            </div>
-            <h3>Phụ kiện Samsung</h3>
-            <div class="s1-compare-detail-price">
-                <h2>24.990.000 ₫</h2>
-                <p>30.990.000 ₫</p>
-            </div>
-            <div class="s1-compare-detail-save">
-                <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
-            </div>
-            <div class="closes-ss1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                    <path d="M6.48438 19.6094L5.39062 18.5156L11.4063 12.5L5.39062 6.48438L6.48438 5.39062L12.5 11.4063L18.5156 5.39062L19.6094 6.48438L13.5938 12.5L19.6094 18.5156L18.5156 19.6094L12.5 13.5938L6.48438 19.6094Z" fill="#4B4B4B"/>
-                  </svg>
+        <div>
+            <div class="s1-compare-text">
+                <p>So sánh sản phẩm</p>
+                <h3>iPhone 14 Pro 256GB</h3>
+                <p>&</p>
+                <h3>iPhone 14 Pro 512GB</h3>
             </div>
         </div>
-        <div class="s1-compare-detail">
-            <div class="s1-compare-detail-img">
-                <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png" alt="">
-            </div>
-            <h3>Samsung Galaxy S22 Ultra 12/128GB</h3>
-            <div class="s1-compare-detail-price">
-                <h2>24.990.000 ₫</h2>
-                <p>30.990.000 ₫</p>
-            </div>
-            <div class="s1-compare-detail-save">
-                <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
-            </div>
-<div class="closes-ss2">
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-        <path d="M6.48438 19.6094L5.39062 18.5156L11.4063 12.5L5.39062 6.48438L6.48438 5.39062L12.5 11.4063L18.5156 5.39062L19.6094 6.48438L13.5938 12.5L19.6094 18.5156L18.5156 19.6094L12.5 13.5938L6.48438 19.6094Z" fill="#4B4B4B"/>
-      </svg>
-</div>
-        </div>
-        <div class="s1-compare-detail">
-           <div class="s1-compare-detail-insert">
-            <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M22.5 38V25.5H10V22.5H22.5V10H25.5V22.5H38V25.5H25.5V38H22.5Z" fill="#C9C9C9"/>
-                </svg>
-            </a>
-            <h2>Thêm sản phẩm</h2>
-           </div>
-
-        </div>
+        <ul class="listcompare1" data-catename="điện thoại">
+            <li class="detail1-item1">
+                <div class="s1-compare-detail1">
+                    <div class="s1-compare-detail-img">
+                        <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png" alt=""
+                            class="onclick" data-act="cl1">
+                    </div>
+                    <h3>Phụ kiện Samsung</h3>
+                    <div class="s1-compare-detail-price">
+                        <h2>24.990.000 ₫</h2>
+                        <p>30.990.000 ₫</p>
+                    </div>
+                    <div class="s1-compare-detail-save">
+                        <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
+                    </div>
+                    <!-- <div onclick="myclosescompare1()" class="closes-ss1">
+                <img src="./images _Mobile/close.svg" alt="">
+            </div> -->
+                </div>
+                <span class="removeCompare2 onclick2-remove1" data-vtv="s1-detail1"><img
+                        src="./images _Mobile/close.svg" alt=""></span>
+            </li>
+            <li class="detail1-item2">
+                <div class="s1-compare-detail1">
+                    <div class="s1-compare-detail-img">
+                        <img src="./images/sm-s908_galaxys22ultra_front_burgundy_211119_3.jpg.png" alt="">
+                    </div>
+                    <h3>Phụ kiện Samsung</h3>
+                    <div class="s1-compare-detail-price">
+                        <h2>24.990.000 ₫</h2>
+                        <p>30.990.000 ₫</p>
+                    </div>
+                    <div class="s1-compare-detail-save">
+                        <h4>Đã tiết kiệm <span>2.000.000đ</span></h4>
+                    </div>
+                    <!-- <div onclick="myclosescompare1()" class="closes-ss1">
+                <img src="./images _Mobile/close.svg" alt="">
+            </div> -->
+                </div>
+                <span class="removeCompare2 onclick2-remove2" data-vtv="s1-detail2"><img
+                        src="./images _Mobile/close.svg" alt=""></span>
+            </li>
+            <li class="detail-item-none">
+                <div class="s1-compare-detail s1-detail-none1 padding-none">
+                    <div class="s1-compare-detail-insert">
+                        <a href="">
+                            <img src="./images/add.svg" alt="">
+                        </a>
+                        <h2>Thêm sản phẩm</h2>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </section>
+
+
     <section class="s2-compare">
         <div class="info-right-speci">
             <div class="info-right-speci-title">
@@ -67,21 +77,21 @@
                     <tbody>
                         <tr>
                             <td class="table-title">Hệ điều hành</td>
-                            <td>Android 13</td>
-                            <td>Android 13</td>
-                            <td class="F4F4F4"></td>
+                            <td class="s1-detail1">Android 13</td>
+                            <td class="s1-detail2">Android 13</td>
+                            <td class="F4F4F4 s1-detail3"></td>
                         </tr>
                         <tr>
                             <td class="table-title">Màn hình:</td>
-                            <td>Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
-                            <td>Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
-                            <td class="F4F4F4"></td>
+                            <td class="s1-detail1">Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
+                            <td class="s1-detail2">Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
+                            <td class="F4F4F4 s1-detail3"></td>
                         </tr>
                         <tr>
                             <td class="table-title">Camera sau:</td>
-                            <td>Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
-                            <td>Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
-                            <td class="F4F4F4"></td>
+                            <td class="s1-detail1">Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
+                            <td class="s1-detail2">Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
+                            <td class="F4F4F4 s1-detail3"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -96,122 +106,115 @@
                     <tbody>
                         <tr>
                             <td class="table-title">Hệ điều hành</td>
-                            <td>Android 13</td>
-                            <td>Android 13</td>
-                            <td class="F4F4F4"></td>
+                            <td class="s1-detail1">Android 13</td>
+                            <td class="s1-detail2">Android 13</td>
+                            <td class="F4F4F4 s1-detail3"></td>
                         </tr>
                         <tr>
                             <td class="table-title">Màn hình:</td>
-                            <td>Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
-                            <td>Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
-                            <td class="F4F4F4"></td>
+                            <td class="s1-detail1">Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
+                            <td class="s1-detail2">Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
+                            <td class="F4F4F4 s1-detail3"></td>
                         </tr>
                         <tr>
                             <td class="table-title">Camera sau:</td>
-                            <td>Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
-                            <td>Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
-                            <td class="F4F4F4"></td>
+                            <td class="s1-detail1">Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
+                            <td class="s1-detail2">Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
+                            <td class="F4F4F4 s1-detail3"></td>
                         </tr>
                     </tbody>
                 </table>
-
-            </div>
-
-            <div class="info-right-speci-title">
-                <h2>THÔNG SỐ KỸ THUẬT</h2>
-            </div>
-            <div class="info-right-speci-content">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td class="table-title">Hệ điều hành</td>
-                            <td>Android 13</td>
-                            <td>Android 13</td>
-                            <td class="F4F4F4"></td>
-                        </tr>
-                        <tr>
-                            <td class="table-title">Màn hình:</td>
-                            <td>Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
-                            <td>Dynamic AMOLED 2X, 6.8", Quad HD+ (2K+)</td>
-                            <td class="F4F4F4"></td>
-                        </tr>
-                        <tr>
-                            <td class="table-title">Camera sau:</td>
-                            <td>Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
-                            <td>Chính 200 MP &amp; Phụ 12 MP, 10 MP, 10 MP</td>
-                            <td class="F4F4F4"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
             </div>
         </div>
 
-        <div class="s2-compare-btn">
-            <div  class="s2-compare-btn1">
-                <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html" class="s2-compare-btn1-now">
-                    <button>
-                        <h2>
-                            MUA NGAY
-                        </h2>
-                    </button>
-                </a>
-                <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"  class="s2-compare-btn1-instm0">
-                    <button>
-                        <h2>
-                            TRẢ GÓP 0%
-                        </h2>
-                        <p>
-                            Trả trước chỉ từ 10.796.000₫
-                        </p>
-                    </button>
-                </a>
-                <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"  class="s2-compare-btn1-instmcart">
-                    <button>
-                        <h2>
-                            TRẢ GÓP QUA THẺ
-                        </h2>
-                        <p>
-                            (Visa, Mastercard, JCB)
-                        </p>
-                    </button>
-                </a>
-            </div>
-            <div href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"  class="s2-compare-btn2">
-                <a class="s2-compare-btn2-now">
-                    <button>
-                        <h2>
-                            MUA NGAY
-                        </h2>
-                    </button>
-                </a>
-                <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"  class="s2-compare-btn2-instm0">
-                    <button>
-                        <h2>
-                            TRẢ GÓP 0%
-                        </h2>
-                        <p>
-                            Trả trước chỉ từ 10.796.000₫
-                        </p>
-                    </button>
-                </a>
-                <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"  class="s2-compare-btn2-instmcart">
-                    <button>
-                        <h2>
-                            TRẢ GÓP QUA THẺ
-                        </h2>
-                        <p>
-                            (Visa, Mastercard, JCB)
-                        </p>
-                    </button>
-                </a>
-            </div>
+<div class="s2-compare-all">
+    <div class="s2-compare-btn">
+        <div class="s2-compare-btn2 s1-detail1">
+            <a class="s2-compare-btn2-now">
+                <button>
+                    <h2>
+                        MUA NGAY
+                    </h2>
+                </button>
+            </a>
+            <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                class="s2-compare-btn2-instm0">
+                <button>
+                    <h2>
+                        TRẢ GÓP 0%
+                    </h2>
+                    <p>
+                        Trả trước chỉ từ 10.796.000₫
+                    </p>
+                </button>
+            </a>
+            <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                class="s2-compare-btn2-instmcart">
+                <button>
+                    <h2>
+                        TRẢ GÓP QUA THẺ
+                    </h2>
+                    <p>
+                        (Visa, Mastercard, JCB)
+                    </p>
+                </button>
+            </a>
         </div>
+        <div class="s2-compare-btn2 s1-detail2">
+            <a class="s2-compare-btn2-now">
+                <button>
+                    <h2>
+                        MUA NGAY
+                    </h2>
+                </button>
+            </a>
+            <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                class="s2-compare-btn2-instm0">
+                <button>
+                    <h2>
+                        TRẢ GÓP 0%
+                    </h2>
+                    <p>
+                        Trả trước chỉ từ 10.796.000₫
+                    </p>
+                </button>
+            </a>
+            <a href="file:///C:/Users/Admin/Documents/GitHub/SmartPhoneSS-Detail/index.html"
+                class="s2-compare-btn2-instmcart">
+                <button>
+                    <h2>
+                        TRẢ GÓP QUA THẺ
+                    </h2>
+                    <p>
+                        (Visa, Mastercard, JCB)
+                    </p>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
         <div style="border-radius: 20px;
         background: var(--dark-green-dark-green-1, #00483D);width: 1200px;
 height: 418px;">
-    <h1>okokokkok</h1>
+            <h1>okokokkok</h1>
         </div>
     </section>
- 
+
 </main>
+
+<!-- <script>
+
+    $(document).ready(function(){
+        $(".onclick").click(function(){
+            var target = $(this).attr("data-act");
+            $('.' + target).html('');
+        });
+
+        $(".onclick2-remove").click(function(){
+            var target = $(this).attr("data-vtv");
+            $('.' + target).css("display","none");
+            var target_display = $(this).attr("data-display");
+            $('.' + target_display).css("display","flex");
+        });
+    });
+</script> -->

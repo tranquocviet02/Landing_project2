@@ -48,9 +48,7 @@ function toggleBorder(clickedDiv) {
 
 document.addEventListener('DOMContentLoaded', function () {
   const oldDiv = document.querySelector('.info-right-price-old');
-  const costDiv1 = document.querySelector('.info-right-price-cost1');
   oldDiv.classList.add('active');
-  costDiv1.classList.add('active');
 });
 
 
@@ -201,46 +199,46 @@ seeMoreOfferButton.addEventListener('click', function () {
 // });
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const offerMoreContentone = document.querySelector('.info-right-offer-content-one');
-//   var content = document.getElementById('content-detail');
-//   var toggleButton = document.getElementById('see-more-offer-one');
-//   var isExpanded = false; // Trạng thái mở rộng ban đầu
+document.addEventListener('DOMContentLoaded', function () {
+  const offerMoreContentone = document.querySelector('.info-right-offer-content-one');
+  var content = document.getElementById('content-detail');
+  var toggleButton = document.getElementById('see-more-offer-one');
+  var isExpanded = false; // Trạng thái mở rộng ban đầu
 
-//   // Số lượng phần tử được hiển thị ban đầu
-//   var initialItemCount = 4;
-//   // Ẩn tất cả nội dung ban đầu nếu không được mở rộng
-//   if (!isExpanded) {
-//     for (var i = initialItemCount; i < content.children.length; i++) {
-//       content.children[i].style.display = 'none';
-//     }
-//   }
+  // Số lượng phần tử được hiển thị ban đầu
+  var initialItemCount = 4;
+  // Ẩn tất cả nội dung ban đầu nếu không được mở rộng
+  if (!isExpanded) {
+    for (var i = initialItemCount; i < content.children.length; i++) {
+      content.children[i].style.display = 'none';
+    }
+  }
 
 
 
-//   // Thêm sự kiện click cho nút "Xem thêm / Thu gọn"
-//   toggleButton.addEventListener('click', function () {
-//     if (isExpanded) {
-//       // Nếu đã mở rộng, thu gọn nội dung
-//       for (var i = initialItemCount; i < content.children.length; i++) {
-//         content.children[i].style.display = 'none';
-//       }
-//       toggleButton.style.textTransform = 'uppercase';
-//       toggleButton.innerHTML = '<h3>Xem thêm bài viết </h3> <i class="fa-solid fa-caret-down"></i>';
-//       offerMoreContentone.classList.remove('open');
-//     } else {
-//       // Nếu chưa mở rộng, hiển thị toàn bộ nội dung
-//       for (var i = initialItemCount; i < content.children.length; i++) {
-//         content.children[i].style.display = 'inline-flex';
-//       }
-//       toggleButton.style.textTransform = 'uppercase';
-//       toggleButton.innerHTML = '<h3>Thu gọn bài viết </h3> <i class="fa-solid fa-caret-up"></i>';
-//       offerMoreContentone.classList.add('open');
-//     }
-//     // Đảo ngược trạng thái mở rộng
-//     isExpanded = !isExpanded;
-//   });
-// });
+  // Thêm sự kiện click cho nút "Xem thêm / Thu gọn"
+  toggleButton.addEventListener('click', function () {
+    if (isExpanded) {
+      // Nếu đã mở rộng, thu gọn nội dung
+      for (var i = initialItemCount; i < content.children.length; i++) {
+        content.children[i].style.display = 'none';
+      }
+      toggleButton.style.textTransform = 'uppercase';
+      toggleButton.innerHTML = '<h3>Xem thêm bài viết </h3> <i class="fa-solid fa-caret-down"></i>';
+      offerMoreContentone.classList.remove('open');
+    } else {
+      // Nếu chưa mở rộng, hiển thị toàn bộ nội dung
+      for (var i = initialItemCount; i < content.children.length; i++) {
+        content.children[i].style.display = 'inline-flex';
+      }
+      toggleButton.style.textTransform = 'uppercase';
+      toggleButton.innerHTML = '<h3>Thu gọn bài viết </h3> <i class="fa-solid fa-caret-up"></i>';
+      offerMoreContentone.classList.add('open');
+    }
+    // Đảo ngược trạng thái mở rộng
+    isExpanded = !isExpanded;
+  });
+});
 
 
 
@@ -669,18 +667,18 @@ function showCompare() {
   document.getElementById("popup-ss").style.display = "none";
 }
 
-// function removeCompare1() {
-//   document.getElementById("drum03090000").style.display = "flex";
-//   document.getElementById("have03092000").style.display = "none";
-// }
-// function removeCompare2() {
-//   document.getElementById("drum030900001").style.display = "flex";
-//   document.getElementById("have030920001").style.display = "none";
-// }
-// function removeCompare3() {
-//   document.getElementById("drum030900002").style.display = "flex";
-//   document.getElementById("have030920002").style.display = "none";
-// }
+function removeCompare1() {
+  document.getElementById("drum03090000").style.display = "flex";
+  document.getElementById("have03092000").style.display = "none";
+}
+function removeCompare2() {
+  document.getElementById("drum030900001").style.display = "flex";
+  document.getElementById("have030920001").style.display = "none";
+}
+function removeCompare3() {
+  document.getElementById("drum030900002").style.display = "flex";
+  document.getElementById("have030920002").style.display = "none";
+}
 function ClosePopup() {
   document.getElementById("Mymodaladd").style.display = "none";
 }
@@ -688,15 +686,15 @@ function ClosePopup() {
 function OpenPopup() {
   document.getElementById("Mymodaladd").style.display = "flex";
 }
-// function RemoveAllIdCompare() {
-//   document.getElementById("have03092000").style.display = "none";
-//   document.getElementById("drum03090000").style.display = "flex";
-//   document.getElementById("have030920001").style.display = "none";
-//   document.getElementById("drum030900001").style.display = "flex";
-//   document.getElementById("have030920002").style.display = "none";
-//   document.getElementById("drum030900002").style.display = "flex";
-//   document.getElementById("popup-ss").style.display = "none";
-// }
+function RemoveAllIdCompare() {
+  document.getElementById("have03092000").style.display = "none";
+  document.getElementById("drum03090000").style.display = "flex";
+  document.getElementById("have030920001").style.display = "none";
+  document.getElementById("drum030900001").style.display = "flex";
+  document.getElementById("have030920002").style.display = "none";
+  document.getElementById("drum030900002").style.display = "flex";
+  document.getElementById("popup-ss").style.display = "none";
+}
 
 
 
@@ -707,7 +705,6 @@ const loadMoreButton = document.getElementById("btn-xemthem");
 let currentIndex = 0;
 const itemsPerPage = 2;
 
-
 // Hàm hiển thị 10 bản ghi tiếp theo
 function displayNextItems() {
 
@@ -716,9 +713,6 @@ function displayNextItems() {
     data.itemsPerPage < data[i]
     data[i].style.display = "flex";
   }
-
-
-
   currentIndex = endIndex;
 
   // Ẩn nút "Xem thêm" nếu đã hiển thị hết dữ liệu
