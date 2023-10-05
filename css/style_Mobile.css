@@ -7065,3 +7065,39 @@ background: var(--red-red-1, #FD475A);
 .with-190px{
     width: 190px !important;
 }
+
+
+.custom-select {
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  .custom-select-trigger {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  
+  .custom-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .custom-option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .custom-option:hover {
+    background: lightblue;
+  }
+  
+  .custom-select.open .custom-options {
+    display: block;
+  }
+  
